@@ -418,15 +418,15 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   /* --- cedar boards, drawn once per size --- */
   function rnd(a,b){return a+Math.random()*(b-a);}
   function drawDeck(g,w,top,h,opts){
-    var cedars=['#c27a3f','#b86f37','#cc844a','#ad6431','#c47d43','#b5703a'];
+    var cedars=['#c98a4e','#b5683a','#d39a5e','#a65a2e','#c27a3f','#b8743f','#9e5530','#cf8f55','#ad6236']; // honey to red-brown
     var y=top,i=0,bh=opts.board;
     g.fillStyle='#3a2416';g.fillRect(0,top,w,h);
     while(y<top+h){
       var hh=Math.min(bh*(1+i*opts.grow),top+h-y);
-      var base=cedars[(i*7+3)%cedars.length];
+      var base=cedars[(Math.random()*cedars.length)|0];
       var seg=opts.joint+((i*137)%opts.joint)*.6, x=-((i*91)%seg); // staggered butt joints
       while(x<w){
-        var len=seg*rnd(.8,1.2);
+        var len=seg*rnd(.8,1.2);base=shade(cedars[(Math.random()*cedars.length)|0],rnd(-4,4)).replace(/rgb\((\d+),(\d+),(\d+)\)/,function(m,r,g2,b){return'#'+[r,g2,b].map(function(v){return(+v).toString(16).padStart(2,'0')}).join('')});
         var grd=g.createLinearGradient(0,y,0,y+hh);
         grd.addColorStop(0,shade(base,7));grd.addColorStop(.55,base);grd.addColorStop(1,shade(base,-9));
         g.fillStyle=grd;g.fillRect(x+1,y+1,len-2,hh-2.4);
@@ -456,9 +456,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     if(opts.band){ // a plank seam: keep only its boards, with a dark gap line on top
       g.clearRect(0,top+opts.band,w,h);g.fillStyle='rgba(58,36,22,.9)';g.fillRect(0,top-1,w,1.5);return;
     }
-    var sh=g.createLinearGradient(0,top-18,0,top+10); // soft shadow where the deck meets the yard
-    sh.addColorStop(0,'rgba(15,34,25,0)');sh.addColorStop(1,'rgba(15,34,25,.45)');
-    g.fillStyle=sh;g.fillRect(0,top-18,w,28);
+    var lt=g.createRadialGradient(w*.72,top+h*.15,10,w*.72,top+h*.15,Math.max(w,h)*.9); // warm dusk light falling across the boards
+    lt.addColorStop(0,'rgba(255,196,120,.16)');lt.addColorStop(.5,'rgba(255,196,120,0)');lt.addColorStop(1,'rgba(20,10,4,.22)');
+    g.fillStyle=lt;g.fillRect(0,top,w,h);
+    var sh=g.createLinearGradient(0,top-18,0,top+26); // soft shadow where the deck meets the yard
+    sh.addColorStop(0,'rgba(15,34,25,0)');sh.addColorStop(.4,'rgba(15,34,25,.45)');sh.addColorStop(1,'rgba(15,34,25,0)');
+    g.fillStyle=sh;g.fillRect(0,top-18,w,44);
   }
 
   /* --- one field of leaves over one board canvas --- */
@@ -475,6 +478,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     this.deck.width=w*DPR;this.deck.height=h*DPR;
     var dg=this.deck.getContext('2d');dg.setTransform(DPR,0,0,DPR,0,0);
     var o=this.cfg.deckOpts(w,h);this.band=o.band||0;
+    var cr=this.c.getBoundingClientRect();
+    this.avoid=(this.cfg.avoid?this.cfg.avoid():[]).map(function(el){var b=el.getBoundingClientRect();return[b.left-cr.left,b.top-cr.top,b.right-cr.left,b.bottom-cr.top];});
     drawDeck(dg,w,this.top,h-this.top,o);
     var n=this.cfg.count();this.leaves=[];
     for(var i=0;i<n;i++)this.leaves.push(this.spawn(Math.random()<this.cfg.startResting));
@@ -542,7 +547,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       if(L.settle>0)sy=sy+(Math.max(.18,Math.abs(fy))-sy)*(L.settle/.18); // ease flat as it lands
       if(!L.rest){ // fade near the field's edges so leaves never cut off at a straight line or cross the header
         alpha=Math.max(0,Math.min(1,(L.y-ft[0])/ft[1],(h-L.y)/24))*.94;
-        if(alpha<=0)continue;
+        for(var k=0;k<this.avoid.length;k++){ // fade out over headline, promise, buttons: no leaf runs through text
+          var a=this.avoid[k],ox=Math.max(a[0]-L.x,0,L.x-a[2]),oy=Math.max(a[1]-L.y,0,L.y-a[3]);
+          alpha*=Math.min(1,Math.max(ox,oy)/(sz*1.6+10));
+        }
+        if(alpha<=0.02)continue;
       }
       var img=fy<0&&!L.rest?L.s.back:L.s.front;
       if(L.rest){g.globalAlpha=.3;g.fillStyle='#2a170c';g.beginPath();g.ellipse(L.x+2,L.y+3,sz*.42,sz*.32,L.a,0,7);g.fill();}
@@ -561,6 +570,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     fields.push(new Field(hero,{
       count:function(){return phone?TUNE.heroLeavesPhone:TUNE.heroLeavesDesk},
       size:leaf(),startResting:.6,fadeTop:[64,50],
+      avoid:function(){return [].slice.call(copy.children);},
       deckTop:function(w,h){
         var r=copy.getBoundingClientRect(),hr=hero.getBoundingClientRect();
         var top=Math.round(r.bottom-hr.top+(w<700?30:56));
@@ -575,6 +585,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     fields.push(new Field(close,{
       count:function(){return phone?TUNE.closeLeavesPhone:TUNE.closeLeavesDesk},
       size:leaf(),startResting:.65,fadeTop:[0,30],
+      avoid:function(){return [].slice.call(cwrap.children);},
       deckTop:function(w,h){
         var a=cwrap.lastElementChild.getBoundingClientRect(),cr=close.getBoundingClientRect();
         return Math.min(Math.round(a.bottom-cr.top+40),h-150);
