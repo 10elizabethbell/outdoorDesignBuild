@@ -1,0 +1,38 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-18T01:37:34.652Z",
+        "reason": "pitch-site house style (ellie-taste.md) pins the system font stack"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "#e0975a on #2b5444",
+        "createdAt": "2026-10-18T01:37:34.741Z",
+        "reason": "h1 em is 44px+ 900 weight display text; 3.6:1 passes WCAG large-text 3:1"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-18T01:37:34.822Z",
+        "reason": "ruled service list: top rule line is the row divider, intentional"
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-18T01:37:34.902Z",
+        "reason": "uppercase only on short service row labels and headings per house style"
+      }
+    ]
+  }
+}
