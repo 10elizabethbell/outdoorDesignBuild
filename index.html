@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://10elizabethbell.github.io/outdoorDesignBuild/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b3a2f'/%3E%3Crect x='8' y='14' width='48' height='10' rx='2' fill='%23c27a3f'/%3E%3Crect x='8' y='27' width='48' height='10' rx='2' fill='%23b06630'/%3E%3Crect x='8' y='40' width='48' height='10' rx='2' fill='%23c98a4e'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23c27a3f'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='-apple-system,Segoe UI,Roboto,Arial,sans-serif' font-weight='900' font-size='27' letter-spacing='-1' fill='%231b3a2f'%3EODB%3C/text%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="img/icon-180.png">
 <style>
 /* ---------- tokens ---------- */
@@ -321,7 +321,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <div class="full">
         <button class="btn btn-fill" type="submit">Text this to Team ODB</button>
       </div>
-      <p class="form-note full">Opens your texting app with this written out. Rather talk? <a href="tel:+12262608133">Call us</a>.</p>
+      <p class="form-note full">Opens your texting app with this written out.</p>
       <div class="after full" id="after" role="status">
         <p><b>Didn't open?</b> Copy this and send it to 226-260-8133, or paste it into a <a href="https://m.me/ODB.windsor">Facebook message</a>.</p>
         <pre id="msgOut"></pre>
@@ -418,7 +418,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   /* --- cedar boards, drawn once per size --- */
   function rnd(a,b){return a+Math.random()*(b-a);}
   function drawDeck(g,w,top,h,opts){
-    var cedars=['#c98a4e','#b5683a','#d39a5e','#a65a2e','#c27a3f','#b8743f','#9e5530','#cf8f55','#ad6236']; // honey to red-brown
+    var cedars=['#c27a3f','#bb7239','#c88145','#b56c36','#c47c42','#be7640']; // one cedar stain, board-to-board shifts
     var y=top,i=0,bh=opts.board;
     g.fillStyle='#3a2416';g.fillRect(0,top,w,h);
     while(y<top+h){
@@ -426,7 +426,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       var base=cedars[(Math.random()*cedars.length)|0];
       var seg=opts.joint+((i*137)%opts.joint)*.6, x=-((i*91)%seg); // staggered butt joints
       while(x<w){
-        var len=seg*rnd(.8,1.2);base=shade(cedars[(Math.random()*cedars.length)|0],rnd(-4,4)).replace(/rgb\((\d+),(\d+),(\d+)\)/,function(m,r,g2,b){return'#'+[r,g2,b].map(function(v){return(+v).toString(16).padStart(2,'0')}).join('')});
+        var len=seg*rnd(.8,1.2);base=shade(cedars[(Math.random()*cedars.length)|0],rnd(-3,3)).replace(/rgb\((\d+),(\d+),(\d+)\)/,function(m,r,g2,b){return'#'+[r,g2,b].map(function(v){return(+v).toString(16).padStart(2,'0')}).join('')});
         var grd=g.createLinearGradient(0,y,0,y+hh);
         grd.addColorStop(0,shade(base,7));grd.addColorStop(.55,base);grd.addColorStop(1,shade(base,-9));
         g.fillStyle=grd;g.fillRect(x+1,y+1,len-2,hh-2.4);

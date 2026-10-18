@@ -22,10 +22,10 @@
 - Impeccable's concept roll (seed 794cc240) assigned "end-grain rings"; I built the cedar-and-leaves direction instead because rings read as a topo map and the leaves carry their own "before winter" hook. The rings' discipline survives as real grain in every board.
 
 ## Placeholders and gaps
-- **No logo.** Mark is three cedar boards drawn in SVG (header, favicon, `img/icon-180.png`). Replace with their logo if they have one.
+- **No logo.** Header mark is three cedar boards drawn in SVG; favicon and iPhone icon (`img/icon-180.png`) use the site's own lettering, "ODB" in heavy sans on a cedar tile. Replace both with their logo if they have one.
 - **One photo only** (their Facebook profile picture, 1536px). Need 3–6 more job photos; the post video wasn't fetchable.
 - No email (footer has none — add it there and only there if they have one), no hours, no reviews, no prices, no owner name.
-- Unknown whether 226-260-8133 takes texts; Messenger and the header call link back it up.
+- **Confirm 226-260-8133 takes texts** (brief: unknown). The form hands off by text; Messenger and the header call link back it up.
 
 ## Questions for the owner
 - Do you take texts on 226-260-8133?
