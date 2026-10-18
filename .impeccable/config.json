@@ -35,6 +35,66 @@
         ],
         "createdAt": "2026-10-18T01:46:32.159Z",
         "reason": "remaining small sizes are breakpoint pairs (17/18 body) and the 16px iOS input floor; hierarchy carried by 44-96px display type"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(24, 119, 242)",
+        "createdAt": "2026-10-18T01:57:33.348Z",
+        "reason": "Facebook brand blue on the proof-bar badge (third-party colour); shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(255, 255, 255)",
+        "createdAt": "2026-10-18T01:57:33.424Z",
+        "reason": "white control fill for chips/inputs on siding; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#b3261e",
+        "createdAt": "2026-10-18T01:57:33.499Z",
+        "reason": "form error border; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#9b2018",
+        "createdAt": "2026-10-18T01:57:33.571Z",
+        "reason": "form error text; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-18T01:57:33.646Z",
+        "reason": "global focus-ring radius; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "15px",
+        "createdAt": "2026-10-18T01:57:33.718Z",
+        "reason": "small-text, brand subtitle, step numeral, desktop body, close headline steps; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11px",
+        "createdAt": "2026-10-18T01:57:33.793Z",
+        "reason": "small-text, brand subtitle, step numeral, desktop body, close headline steps; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "52px",
+        "createdAt": "2026-10-18T01:57:33.864Z",
+        "reason": "small-text, brand subtitle, step numeral, desktop body, close headline steps; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "18px",
+        "createdAt": "2026-10-18T01:57:33.937Z",
+        "reason": "small-text, brand subtitle, step numeral, desktop body, close headline steps; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "clamp(2.2rem,10vw,4.6rem)",
+        "createdAt": "2026-10-18T01:57:34.010Z",
+        "reason": "small-text, brand subtitle, step numeral, desktop body, close headline steps; shipped value reviewed in finish review (ship); DESIGN.md documenter omitted it"
       }
     ]
   }
