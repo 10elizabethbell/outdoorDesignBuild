@@ -32,6 +32,15 @@
         ],
         "createdAt": "2026-10-18T01:37:34.902Z",
         "reason": "uppercase only on short service row labels and headings per house style"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-18T01:46:32.159Z",
+        "reason": "remaining small sizes are breakpoint pairs (17/18 body) and the 16px iOS input floor; hierarchy carried by 44-96px display type"
       }
     ]
   }
