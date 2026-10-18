@@ -10,7 +10,7 @@
 - Impeccable: detector, finish reviewer, and all modes except live (critique, audit, harden, clarify, adapt, optimize, polish, typeset, layout, colorize, animate, delight, bolder, quieter, distill, overdrive) run as review sweeps; fixes applied.
 
 ## Assumptions I made
-- **Their real Facebook page is facebook.com/ODB.windsor** (found from the brief's profile ID; og:url redirect). Page intro: "strives to build custom project designs that exhibit a premier level of workmanship."
+- **Their real Facebook page is facebook.com/ODB.windsor**: Facebook's own `og:url` for the brief's `profile.php?id=100063737972732` is that vanity URL (checked 2026-10-17), so Messenger links use `m.me/ODB.windsor`. Page intro: "strives to build custom project designs that exhibit a premier level of workmanship."
 - **Services list is inferred**: Decks, Pergolas, Railings & stairs (all visible in their deck photo), Patios, Landscaping (Houzz categories). They publish no list. Confirm with owner.
 - **Crew voice ("we")**: they sign off "Team ODB".
 - **Colors**: no logo or brand colors exist; cedar is sampled from their own deck photo; spruce green chosen as a non-black ground.
@@ -38,6 +38,8 @@
 ## Ideas not built (yours to pick)
 - **Runner-up world:** a blueprint drafting sheet whose plan lines draw a deck, then fill in as cedar as you scroll (the "design → build" story).
 - Leaves swept off the hero deck land in the first seam (carry-through physics).
+- Desktop hero: the right ~40% is open green with only flying leaves. Options: their deck photo as a framed print leaning on the deck, or a pergola beam silhouette casting dusk shadows across the boards.
+- Deck detail: a fascia board along the front edge and visible board ends/end grain at the butt joints.
 - Leaf lift/drag by flip angle (flat leaves glide, edge-on drop); resting leaves curl in gusts.
 - Before/after slider once pairs exist; a small gallery from more photos.
 - Short "Who you'll deal with" line with the owner's name and photo.
