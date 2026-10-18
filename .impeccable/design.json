@@ -1,0 +1,523 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T01:56:24.037403+00:00",
+  "title": "Design System: Outdoor Design Build",
+  "extensions": {
+    "colorMeta": {
+      "spruce": {
+        "role": "neutral",
+        "displayName": "Evergreen Dusk",
+        "canonical": "#1b3a2f",
+        "tonalRamp": [
+          "#132a22",
+          "#275343",
+          "#3a7c65",
+          "#4da686",
+          "#72bda2",
+          "#9bd0be",
+          "#c4e4d9",
+          "#eef7f4"
+        ]
+      },
+      "spruce-2": {
+        "role": "neutral",
+        "displayName": "Evergreen Raised",
+        "canonical": "#234a3c",
+        "tonalRamp": [
+          "#142a22",
+          "#275343",
+          "#3a7c64",
+          "#4ea586",
+          "#73bda2",
+          "#9cd0bd",
+          "#c5e3d8",
+          "#eef7f4"
+        ]
+      },
+      "spruce-ink": {
+        "role": "neutral",
+        "displayName": "Spruce Ink",
+        "canonical": "#0f2219",
+        "tonalRamp": [
+          "#132a1f",
+          "#25543e",
+          "#387e5d",
+          "#4aa87c",
+          "#6fc09a",
+          "#99d2b7",
+          "#c3e5d5",
+          "#edf7f3"
+        ]
+      },
+      "footer": {
+        "role": "neutral",
+        "displayName": "Deep Spruce Band",
+        "canonical": "#15302a",
+        "tonalRamp": [
+          "#132b25",
+          "#25554a",
+          "#377f6f",
+          "#4aa994",
+          "#6fc0ae",
+          "#99d2c6",
+          "#c3e5dd",
+          "#edf7f5"
+        ]
+      },
+      "siding": {
+        "role": "neutral",
+        "displayName": "Pale Siding",
+        "canonical": "#e8ece7",
+        "tonalRamp": [
+          "#1c221b",
+          "#394436",
+          "#556650",
+          "#71876b",
+          "#90a48c",
+          "#b1bead",
+          "#d1d9cf",
+          "#f1f4f1"
+        ]
+      },
+      "siding-2": {
+        "role": "neutral",
+        "displayName": "Siding Shade",
+        "canonical": "#dde3dd",
+        "tonalRamp": [
+          "#1c221c",
+          "#374337",
+          "#526452",
+          "#6e856e",
+          "#8ea28e",
+          "#afbdaf",
+          "#d0d8d0",
+          "#f1f3f1"
+        ]
+      },
+      "cedar": {
+        "role": "primary",
+        "displayName": "Fresh-Stained Cedar",
+        "canonical": "#c27a3f",
+        "tonalRamp": [
+          "#2e1d0f",
+          "#5c3a1d",
+          "#8a562c",
+          "#b8733a",
+          "#cd9262",
+          "#dcb290",
+          "#ead2be",
+          "#f9f2ec"
+        ]
+      },
+      "cedar-deep": {
+        "role": "primary",
+        "displayName": "Deep Cedar Stain",
+        "canonical": "#9a5528",
+        "tonalRamp": [
+          "#311b0d",
+          "#613519",
+          "#915026",
+          "#c16a32",
+          "#d48b5b",
+          "#e1ad8b",
+          "#edcfbb",
+          "#faf1eb"
+        ]
+      },
+      "cedar-hi": {
+        "role": "primary",
+        "displayName": "Cedar Light",
+        "canonical": "#e8a167",
+        "tonalRamp": [
+          "#351c08",
+          "#6a3810",
+          "#9e5418",
+          "#d37020",
+          "#e4904b",
+          "#ecb080",
+          "#f4d1b4",
+          "#fcf1e9"
+        ]
+      },
+      "cedar-hover": {
+        "role": "primary",
+        "displayName": "Cedar Hover",
+        "canonical": "#d38a4d",
+        "tonalRamp": [
+          "#311d0c",
+          "#623a18",
+          "#925624",
+          "#c37330",
+          "#d69259",
+          "#e2b28a",
+          "#eed2ba",
+          "#faf2eb"
+        ]
+      },
+      "on-cedar": {
+        "role": "primary",
+        "displayName": "Ink on Cedar",
+        "canonical": "#1d1109",
+        "tonalRamp": [
+          "#2f1b0e",
+          "#5d361d",
+          "#8b512b",
+          "#b96d39",
+          "#ce8d61",
+          "#dcae8f",
+          "#ebcfbd",
+          "#f9f1ec"
+        ]
+      },
+      "brand-sub": {
+        "role": "primary",
+        "displayName": "Brand Subline Cedar",
+        "canonical": "#e3a46d",
+        "tonalRamp": [
+          "#331d0a",
+          "#663a14",
+          "#99571d",
+          "#cc7427",
+          "#de9351",
+          "#e7b284",
+          "#f1d2b7",
+          "#fbf2ea"
+        ]
+      },
+      "maple": {
+        "role": "secondary",
+        "displayName": "Maple Gold",
+        "canonical": "#efb43c",
+        "tonalRamp": [
+          "#392705",
+          "#704e09",
+          "#a8750e",
+          "#e09c12",
+          "#efb540",
+          "#f4cb78",
+          "#f8e0b0",
+          "#fdf6e7"
+        ]
+      },
+      "focus-light": {
+        "role": "secondary",
+        "displayName": "Deep Maple",
+        "canonical": "#946008",
+        "tonalRamp": [
+          "#3a2603",
+          "#734b06",
+          "#ad7009",
+          "#e6950c",
+          "#f4af3b",
+          "#f7c774",
+          "#fbdead",
+          "#fef5e7"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "Black Baluster",
+        "canonical": "#262b2e",
+        "tonalRamp": [
+          "#1c1f22",
+          "#373e43",
+          "#525d64",
+          "#6e7c85",
+          "#8e9aa1",
+          "#afb8bd",
+          "#d0d5d8",
+          "#f1f3f3"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule Grey",
+        "canonical": "#c5cec7",
+        "tonalRamp": [
+          "#1c211d",
+          "#38423a",
+          "#536357",
+          "#6f8474",
+          "#8fa093",
+          "#b0bcb2",
+          "#d0d8d2",
+          "#f1f3f2"
+        ]
+      },
+      "control-line": {
+        "role": "neutral",
+        "displayName": "Control Line",
+        "canonical": "#84928a",
+        "tonalRamp": [
+          "#1d201e",
+          "#39413c",
+          "#56615a",
+          "#728178",
+          "#919e97",
+          "#b1bab5",
+          "#d1d7d4",
+          "#f1f3f2"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Soft Light Ink",
+        "canonical": "#f3f1ea",
+        "tonalRamp": [
+          "#272316",
+          "#4d462c",
+          "#746942",
+          "#9a8c58",
+          "#b4a77b",
+          "#cac1a2",
+          "#e0dbc8",
+          "#f6f4ef"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Soft Light Ink, Secondary",
+        "canonical": "#c9d6cd",
+        "tonalRamp": [
+          "#1a231d",
+          "#35453a",
+          "#4f6856",
+          "#698a73",
+          "#89a692",
+          "#acc0b2",
+          "#cedad2",
+          "#f1f4f2"
+        ]
+      },
+      "on-light-soft": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#46524b",
+        "tonalRamp": [
+          "#1c211e",
+          "#38423c",
+          "#54625a",
+          "#708378",
+          "#8fa096",
+          "#b0bcb5",
+          "#d1d7d3",
+          "#f1f3f2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only (close headline uses clamp(2.2rem,10vw,4.6rem))."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, uppercase 900."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows; step titles at 1.25rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs; 18px at 900px+."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, legends, labels, phone number."
+      }
+    },
+    "shadows": [
+      {
+        "name": "photo-lift",
+        "value": "0 22px 44px -18px rgba(30,40,34,.55), 0 4px 12px rgba(30,40,34,.18)",
+        "purpose": "Work photograph only."
+      },
+      {
+        "name": "input-focus-halo",
+        "value": "0 0 0 3px rgba(148,96,8,.25)",
+        "purpose": "Text field focus with focus-light border."
+      },
+      {
+        "name": "headline-legibility",
+        "value": "text-shadow: 0 2px 24px rgba(15,34,25,.75)",
+        "purpose": "Headlines over leaf fields."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state",
+        "value": "background-color/border-color/color .2s",
+        "purpose": "Buttons, arrow circle, proof bar."
+      },
+      {
+        "name": "control",
+        "value": "border-color/background-color .15s",
+        "purpose": "Chips and inputs."
+      },
+      {
+        "name": "press",
+        "value": "translateY(1px) .15s",
+        "purpose": "Button active; disabled under reduced motion."
+      },
+      {
+        "name": "leaf-tune",
+        "value": "wind 34px/s, gust 70, gravity 46, blowForce 950, carry 1.1, blowRadius 90/130px, respawn 4-10s",
+        "purpose": "Leaf Field TUNE defaults."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "no-wrap",
+        "value": "400px"
+      },
+      {
+        "name": "brand-sub",
+        "value": "430px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "phone-engine",
+        "value": "700px"
+      },
+      {
+        "name": "md",
+        "value": "900px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "leafPalette": [
+      "#b8382a",
+      "#c8442b",
+      "#a8552a",
+      "#c4622a",
+      "#8a4a26",
+      "#d98a2e",
+      "#9e3324"
+    ],
+    "boardStains": [
+      "#c27a3f",
+      "#bb7239",
+      "#c88145",
+      "#b56c36",
+      "#c47c42",
+      "#be7640"
+    ]
+  },
+  "components": [
+    {
+      "name": "Fill Button",
+      "kind": "button",
+      "refersTo": "button-fill",
+      "description": "Primary action: free estimate, form submit.",
+      "html": "<a class=\"ds-btn ds-btn-fill\" href=\"#\">Get a free estimate</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:var(--radius,10px);font:800 17px/1 var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif);text-decoration:none;border:2px solid var(--cedar,#c27a3f);cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid var(--maple,#efb43c);outline-offset:3px}.ds-btn-fill{background:var(--cedar,#c27a3f);color:var(--on-cedar,#1d1109)}.ds-btn-fill:hover{background:var(--cedar-hover,#d38a4d);border-color:var(--cedar-hover,#d38a4d)}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on dark grounds: Message us on Facebook.",
+      "html": "<div style=\"background:#1b3a2f;padding:20px\"><a class=\"ds-btn-line\" href=\"#\">Message us on Facebook</a></div>",
+      "css": ".ds-btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:10px;font:800 17px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;text-decoration:none;border:2px solid #c27a3f;background:rgba(27,58,47,.55);color:#f3f1ea;transition:border-color .2s,color .2s}.ds-btn-line:hover{border-color:#efb43c;color:#efb43c}.ds-btn-line:focus-visible{outline:3px solid #efb43c;outline-offset:3px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row-arrow",
+      "description": "Ruled uppercase link; only the arrow circle responds to hover/focus.",
+      "html": "<div style=\"background:#e8ece7;color:#262b2e;padding:16px\"><a class=\"ds-row\" href=\"#\">Decks<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h13M13 6l6 6-6 6\"/></svg></span></a></div>",
+      "css": ".ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:8px 2px;color:inherit;text-decoration:none;font:900 1.6rem/0.98 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;text-transform:uppercase;border-top:1px solid #c5cec7;border-bottom:1px solid #c5cec7}.ds-row:hover,.ds-row:focus-visible{outline:none}.ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#dde3dd;color:#262b2e;transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#c27a3f;color:#1d1109}.ds-row:focus-visible .ds-arrow{outline:3px solid #946008;outline-offset:3px}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Pill checkbox/radio for project type and timing.",
+      "html": "<div style=\"background:#e8ece7;padding:16px;display:flex;gap:10px\"><label class=\"ds-chip\"><input type=\"checkbox\"><span>Deck</span></label><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Pergola</span></label></div>",
+      "css": ".ds-chip{position:relative}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px}.ds-chip span{display:flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#fff;border:2px solid #84928a;color:#262b2e;font:700 17px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chip span:hover{border-color:#946008}.ds-chip input:focus-visible+span{outline:3px solid #946008;outline-offset:2px}.ds-chip input:checked+span{background:#1b3a2f;border-color:#1b3a2f;color:#f3f1ea}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "White field with control-line border and Deep Maple focus.",
+      "html": "<div style=\"background:#e8ece7;padding:16px\"><input class=\"ds-input\" placeholder=\"Your name\"></div>",
+      "css": ".ds-input{width:100%;font:16px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#262b2e;background:#fff;border:2px solid #84928a;border-radius:10px;padding:14px;min-height:54px;transition:border-color .15s}.ds-input:hover{border-color:#946008}.ds-input:focus{outline:none;border-color:#946008;box-shadow:0 0 0 3px rgba(148,96,8,.25)}"
+    },
+    {
+      "name": "Proof Bar",
+      "kind": "card",
+      "refersTo": "proof-bar",
+      "description": "Facebook link bar under the work photo.",
+      "html": "<a class=\"ds-fb\" href=\"#\"><span>Click to see more of our work.<small>2,600+ people follow our builds</small></span><svg class=\"ds-go\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h13M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-fb{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 18px;border-radius:10px;background:#1b3a2f;color:#f3f1ea;text-decoration:none;font:800 17px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;transition:background-color .2s}.ds-fb:hover{background:#234a3c}.ds-fb:focus-visible{outline:3px solid #946008;outline-offset:3px}.ds-fb small{display:block;font-weight:500;color:#c9d6cd;font-size:15px;margin-top:2px}.ds-go{margin-left:auto;width:22px;height:22px;flex:none;transition:transform .2s}.ds-fb:hover .ds-go{transform:translateX(3px);color:#efb43c}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Plank mark and name left, phone number top-right; absolute, not sticky.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 64 64\" width=\"34\" height=\"34\"><rect width=\"64\" height=\"64\" rx=\"12\" fill=\"#c27a3f\"/><rect y=\"20\" width=\"64\" height=\"3\" fill=\"#7d4320\"/><rect y=\"41\" width=\"64\" height=\"3\" fill=\"#7d4320\"/></svg><b>Outdoor Design Build<span>Windsor, Ontario</span></b></a><a class=\"ds-tel\" href=\"#\">226-260-8133</a></div>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding:0 20px;background:#1b3a2f;color:#f3f1ea;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}.ds-brand{display:flex;align-items:center;gap:10px;color:inherit;text-decoration:none}.ds-brand b{font-weight:900;text-transform:uppercase;font-size:15px;line-height:1;letter-spacing:.02em}.ds-brand b span{display:block;color:#e3a46d;font-size:11px;letter-spacing:.14em;margin-top:4px}.ds-tel{color:inherit;font-weight:800;font-size:17px;text-decoration:none;font-variant-numeric:tabular-nums}.ds-tel:hover{color:#efb43c}.ds-tel:focus-visible,.ds-brand:focus-visible{outline:3px solid #efb43c;outline-offset:3px;border-radius:6px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Deck Before the Snow",
+    "overview": "**Creative North Star: \"The Deck Before the Snow\"**\n\nThe page is the client's own cedar deck at dusk in late October. Spruce green is the yard and the sky; fresh-stained cedar boards, drawn live on canvas with real grain, screws and butt joints, are the structural material that ties every section together; pale siding grey carries the reading sections. Maple and elm leaves blow in on a gusty breeze and settle on the boards, and a finger or mouse sweeps them off like a leaf blower. That living deck is the signature; everything else stays plain so it can carry the page.\n\nDensity is low and phone-first: one column, big uppercase heads, 56px buttons, generous section padding. Type is a single heavy system sans. There is no card grid, no stock photo hero, no testimonial strip. Proof is the client's one real deck photo and their Facebook following.",
+    "keyCharacteristics": [
+      "Dark spruce ground alternating with light siding sections, joined by cedar plank seams.",
+      "Cedar is the action color; maple gold appears only as focus/hover feedback.",
+      "One family, weight 900, uppercase for every heading.",
+      "Live canvas leaves over cached board drawings in hero, seams, photo ledge and close.",
+      "Flat UI; the only real shadow sits under the photograph."
+    ],
+    "rules": [
+      {
+        "name": "The Maple Means Focus Rule",
+        "body": "Maple gold (and Deep Maple on light) signals \"you are here / you can press this\". It is never decoration, never a heading color, never a resting fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Focus Colors Rule",
+        "body": "Default `:focus-visible` is a 3px maple outline at 3px offset; inside any `.light` section it switches to focus-light. Any new light surface must carry the `light` class so focus stays visible.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plain Numeral Rule",
+        "body": "Steps are numbered with a bare cedar-hi numeral (900, 52px) from a CSS counter. No circles, badges or \"Step 01\" labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Only the Photo Floats Rule",
+        "body": "No card or button shadows. If something needs separation, use a ground change or a 1px rule.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do join every dark/light section boundary with a cedar plank seam field.",
+      "Do keep cedar as the only action fill and maple (focus-light on siding) as the only hover/focus accent.",
+      "Do set every heading 900 uppercase in the system stack, balanced wrap.",
+      "Do keep tap targets at least 44px (buttons 56px, chips 48px, inputs 54px).",
+      "Do add any new text block over a leaf field to that field's avoid list and give it the legibility text-shadow.",
+      "Do keep the phone number top-right on the first screen and show it at most once per screen.",
+      "Do make everything that looks pressable actually pressable (rows, chips, arrow circles, proof bar all link or toggle)."
+    ],
+    "donts": [
+      "Don't make the header sticky or add a sticky/floating call bar (client house rule).",
+      "Don't repeat the phone number elsewhere on the first screen, or place it anywhere but top-right there.",
+      "Don't add email links (none exists; if the owner supplies one, it goes in the footer only).",
+      "Don't style non-interactive things to look clickable: no arrow circles, pills, underlines or button shapes on static content.",
+      "Don't change the service row background or draw a box on hover; only the arrow circle responds.",
+      "Don't add shadows to cards or buttons, or wrap rows and steps in cards.",
+      "Don't add eyebrows, kickers or badges above headings, or step-number chips.",
+      "Don't redraw the boards every frame or run the loop off-screen."
+    ]
+  }
+}
