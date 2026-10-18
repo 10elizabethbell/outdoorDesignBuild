@@ -11,7 +11,7 @@
 
 ## Assumptions I made
 - **Their real Facebook page is facebook.com/ODB.windsor**: Facebook's own `og:url` for the brief's `profile.php?id=100063737972732` is that vanity URL (checked 2026-10-17), so Messenger links use `m.me/ODB.windsor`. Page intro: "strives to build custom project designs that exhibit a premier level of workmanship."
-- **Services list is inferred**: Decks, Pergolas, Railings & stairs (all visible in their deck photo), Patios, Landscaping (Houzz categories). They publish no list. Confirm with owner.
+- **Services list is inferred**: Decks, Pergolas, Railings & stairs (from their one deck photo), Patios and Landscaping (from the Houzz directory categories). They publish no list. Confirm with owner.
 - **Crew voice ("we")**: they sign off "Team ODB".
 - **Colors**: no logo or brand colors exist; cedar is sampled from their own deck photo; spruce green chosen as a non-black ground.
 - **Seasonal headline** ("before winter") follows their 2026-10-17 post. Swap in spring, e.g. "Your deck, ready for summer." and close "Get it built before the heat."
