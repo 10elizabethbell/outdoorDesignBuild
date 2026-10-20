@@ -3,687 +3,512 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Outdoor Design Build | Custom decks in Windsor, Ontario</title>
-<meta name="description" content="Custom decks, pergolas and outdoor builds in Windsor, Ontario. Designed with you, built like it's our own backyard. Free estimates: 226-260-8133.">
-<meta name="theme-color" content="#1b3a2f">
+<title>Outdoor Design Build · Custom decks in Windsor, Ontario</title>
+<meta name="description" content="Custom decks, pergolas and outdoor builds in Windsor, Ontario, from Team ODB. Free estimates: 226-260-8133.">
+<meta name="theme-color" content="#f4f6fb">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Outdoor Design Build | Windsor, ON">
-<meta property="og:description" content="Custom decks and outdoor builds, designed with you. Free estimates.">
+<meta property="og:title" content="Outdoor Design Build · Windsor decks, done before winter.">
+<meta property="og:description" content="Custom decks and outdoor builds in Windsor, Ontario. Free estimates.">
 <meta property="og:url" content="https://10elizabethbell.github.io/outdoorDesignBuild/">
 <meta property="og:image" content="https://10elizabethbell.github.io/outdoorDesignBuild/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23c27a3f'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='-apple-system,Segoe UI,Roboto,Arial,sans-serif' font-weight='900' font-size='27' letter-spacing='-1' fill='%231b3a2f'%3EODB%3C/text%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="preload" as="image" href="img/hero-phone.webp" media="(max-width:759px)">
+<link rel="preload" as="image" href="img/hero-wide.webp" media="(min-width:760px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
 <style>
-/* ---------- tokens ---------- */
+/* ---------- Tokens ---------- */
 :root{
-  --spruce:#1b3a2f;        /* page ground: evergreen at dusk */
-  --spruce-2:#234a3c;
-  --spruce-ink:#0f2219;
-  --siding:#e8ece7;        /* light sections: the pale siding behind their deck */
-  --siding-2:#dde3dd;
-  --cedar:#c27a3f;         /* fresh-stained cedar */
-  --cedar-deep:#9a5528;
-  --cedar-hi:#e8a167;      /* cedar light enough for large text on spruce */
-  --cedar-hover:#d38a4d;
-  --on-cedar:#1d1109;
-  --brand-sub:#e3a46d;
-  --rule:#c5cec7;          /* decorative rules on siding */
-  --control-line:#84928a;  /* form control borders, 3:1 on white */
-  --focus-light:#946008;   /* maple, deepened for focus/hover on light sections */
-  --footer:#15302a;
-  --rail:#262b2e;          /* black balusters, used as ink on light */
-  --maple:#efb43c;         /* maple gold: form focus/hover accent */
-  --on-dark:#f3f1ea;
-  --on-dark-soft:#c9d6cd;
-  --on-light-soft:#46524b;
-  --radius:10px;
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  /* off-white paper, two slate navies (the black rails and dark posts of their deck), one cedar accent from the boards */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --field:#e6ecf5;       /* inputs and chips on the white form card */
+  --ink:#14243b;         /* headings, text on cedar */
+  --body:#2a3748;        /* running text on light */
+  --soft:#4a5668;        /* secondary text on light */
+  --navy:#223d5e;        /* hero overlay, services, close */
+  --deep:#14243b;        /* how it works, footer (line texture) */
+  --on-dark:#f4f6fb;
+  --on-dark-soft:#c8d4e4;
+  --cedar:#dc955a;       /* fresh cedar, fills only; text on it is --ink */
+  --cedar-2:#e8ab78;
+  --cedar-ink:#8f4a17;   /* cedar as text on light */
+  --line:rgba(20,36,59,.12);
+  --focus:#223d5e;       /* form hover/focus outline, distinct from the cedar fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
+  --gutter:20px;
 }
 *{box-sizing:border-box}
-html{scrollbar-color:var(--cedar) var(--spruce);-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth}
-body{margin:0;background:var(--spruce);color:var(--on-dark);font:17px/1.55 var(--font)}
-img{max-width:100%;display:block}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper);scrollbar-color:var(--navy) var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--cedar);color:var(--ink)}
+img,svg{display:block}
 a{color:inherit}
-::selection{background:var(--maple);color:var(--spruce-ink)}
-:focus-visible{outline:3px solid var(--maple);outline-offset:3px;border-radius:6px}
-.light :focus-visible{outline-color:var(--focus-light)}
-.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:.98;margin:0;text-wrap:balance}
-h2{font-size:clamp(2rem,8vw,3.6rem)}
-.skip{position:absolute;left:-999px;top:8px;background:var(--maple);color:var(--spruce-ink);padding:10px 14px;z-index:20}
-.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--cedar)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0}
 
-/* ---------- header ---------- */
-.top{position:absolute;inset:0 0 auto 0;z-index:5}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding-top:env(safe-area-inset-top)}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px}
-.brand svg{width:34px;height:34px;flex:none}
-.brand b{font-weight:900;text-transform:uppercase;font-size:15px;line-height:1;letter-spacing:.02em}
-.brand b span{display:block;color:var(--brand-sub);font-size:11px;letter-spacing:.14em;margin-top:4px}
-.tel{font-weight:800;font-size:17px;text-decoration:none;white-space:nowrap;min-height:44px;display:flex;align-items:center;padding:0 2px;font-variant-numeric:tabular-nums}
-.tel:hover{color:var(--maple)}
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--cedar-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--cedar)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:38ch}
 
-/* ---------- hero ---------- */
-.hero{position:relative;min-height:640px;min-height:clamp(640px,100svh,940px);overflow:hidden;
-  background:radial-gradient(120% 70% at 70% 0%,#25473a 0%,var(--spruce) 55%,#163126 100%)}
-.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.hero .deckpad{position:absolute;left:0;right:0;bottom:0;touch-action:none}
-.hero-copy{position:relative;z-index:2;padding-top:96px;pointer-events:none}
-.hero h1{max-width:760px}
-.hero-copy a{pointer-events:auto}
-.hero h1{font-size:clamp(2.75rem,12.4vw,6rem);letter-spacing:-.025em;text-shadow:0 2px 24px rgba(15,34,25,.75)}
-.hero h1 em{font-style:normal;color:var(--cedar-hi)}
-.promise{font-size:clamp(17px,4.6vw,20px);color:var(--on-dark-soft);max-width:34ch;margin:18px 0 26px;text-shadow:0 1px 14px rgba(15,34,25,.9)}
-.actions{display:flex;flex-direction:column;gap:12px;max-width:420px}
-@media (min-width:400px){.actions .btn{white-space:nowrap}}
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:var(--radius);
-  font:800 17px/1 var(--font);text-decoration:none;border:2px solid var(--cedar);cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s}
-.btn:active{transform:translateY(1px)}
-.btn-fill{background:var(--cedar);color:var(--on-cedar)}
-.btn-fill:hover{background:var(--cedar-hover);border-color:var(--cedar-hover)}
-.btn-line{background:rgba(27,58,47,.55);color:var(--on-dark)}
-.btn-line:hover{border-color:var(--maple);color:var(--maple)}
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(20,36,59,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cedar)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
 .btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--cedar);color:var(--ink);border-color:var(--cedar)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,246,251,.7)}
 
-/* ---------- plank seam between sections ---------- */
-.seam{position:relative;height:96px;margin-top:-48px;margin-bottom:-48px;z-index:3;pointer-events:none}
-.ledge{position:relative;height:96px;margin:-62px -8px -34px;z-index:2;pointer-events:none}
-.seam canvas,.ledge canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:auto;touch-action:pan-y}
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
+.brand b{font:400 22px/1 var(--display);letter-spacing:.02em}
+.brand span{font:600 12px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--cedar-ink)}
 
-/* ---------- light sections ---------- */
-.light{background:var(--siding);color:var(--rail)}
-.sec{padding:96px 0 88px}
-.sec h2{margin-bottom:28px}
+/* ---------- Hero: their cedar deck under a navy overlay ---------- */
+.hero{padding:0;position:relative;background-color:var(--navy);color:var(--on-dark);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,36,59,.84) 0%,rgba(24,43,68,.76) 55%,rgba(20,36,59,.86) 100%)}
+.hero-copy{position:relative;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:64px}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,84px);line-height:1.02;max-width:11ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.hero h1.wait{visibility:hidden}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark);max-width:30ch}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
 
-/* services */
-.build-grid{display:grid;gap:56px}
-.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
-.rows li{border-bottom:1px solid var(--rule)}
-.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:8px 2px;text-decoration:none;
-  font-weight:900;text-transform:uppercase;font-size:clamp(1.25rem,5.6vw,1.6rem);letter-spacing:-.005em}
+/* ---------- Services: rows on navy, only the arrow reacts ---------- */
+.rows{list-style:none;margin:28px 0 0;padding:0}
+.rows li{border-top:1px solid rgba(255,255,255,.12)}
+.rows li:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:10px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(21px,5.6vw,24px)/1.2 var(--display)}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
-.arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none;background:var(--siding-2);color:var(--rail);transition:background-color .2s,color .2s}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s}
 .arrow svg{width:18px;height:18px}
-.row:hover .arrow,.row:focus-visible .arrow{background:var(--cedar);color:var(--on-cedar)}
-.row:focus-visible .arrow{outline:3px solid var(--focus-light);outline-offset:3px}
+.row:focus-visible .arrow{background:var(--cedar);color:var(--ink);outline:3px solid var(--cedar);outline-offset:3px}
 
-/* work photo */
-.work h2{margin-bottom:22px}
-.photo{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 22px 44px -18px rgba(30,40,34,.55),0 4px 12px rgba(30,40,34,.18);background:#cfd6d0;aspect-ratio:1/1}
-.photo img{width:100%;height:100%;object-fit:cover}
-.fb{display:flex;align-items:center;gap:14px;margin-top:18px;min-height:64px;padding:12px 18px;border-radius:var(--radius);
-  background:var(--spruce);color:var(--on-dark);text-decoration:none;font-weight:800;font-size:17px;transition:background-color .2s}
-.fb:hover{background:var(--spruce-2)}
-.fb .fbi{width:36px;height:36px;border-radius:50%;background:#1877f2;display:grid;place-items:center;flex:none}
-.fb .fbi svg{width:20px;height:20px;color:#fff}
-.fb small{display:block;font-weight:500;color:var(--on-dark-soft);font-size:15px;margin-top:2px}
-.fb .go{margin-left:auto;width:22px;height:22px;flex:none;transition:transform .2s}
-.fb:hover .go{transform:translateX(3px);color:var(--maple)}
+/* ---------- Work ---------- */
+.work .wrap{display:grid;gap:28px}
+.work-head{display:contents}
+.work .shot{order:1}
+.work .fb{order:2}  /* phone: heading, photo, then the Facebook link under it */
+.shot{position:relative;margin:0;border-radius:var(--r-card);overflow:hidden;background:var(--deep);aspect-ratio:1/1}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot::after{content:"";position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(180deg,transparent,rgba(14,26,44,.78))}
+.shot b{position:absolute;left:20px;right:20px;bottom:18px;z-index:1;font:400 22px/1.15 var(--display);color:#fff}
+.fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:84px;padding:14px 16px 14px 22px;border-radius:var(--r-card);background:var(--navy);color:var(--on-dark);text-decoration:none;font:400 clamp(20px,5.4vw,23px)/1.2 var(--display)}
+.fb:hover,.fb:focus-visible{outline:none;box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:30px;height:30px;flex:none;color:var(--cedar)}
+.fb:focus-visible .arrow{background:var(--cedar);color:var(--ink);outline:3px solid var(--cedar);outline-offset:3px}
 
-/* how it works */
-.steps{list-style:none;margin:0;padding:0;display:grid;gap:26px;counter-reset:s}
-.steps li{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
-.steps li::before{counter-increment:s;content:counter(s);color:var(--cedar-hi);font-weight:900;font-size:52px;line-height:.9;text-align:left}
-.steps h3{font-size:1.25rem;margin:4px 0 6px}
-.steps p{margin:0;color:var(--on-dark-soft)}
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--cedar);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
 
-/* estimate form */
-.form{display:grid;gap:22px;max-width:640px}
-.form fieldset{border:0;margin:0;padding:0;min-width:0}
-.form legend,.form label{font-weight:800;font-size:17px;margin-bottom:10px;display:block;padding:0}
-.form .opt{font-weight:500;color:var(--on-light-soft)}
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
+textarea{min-height:120px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
-.chip{position:relative}
-.chip input{position:absolute;opacity:0;width:1px;height:1px}
-.chip span{display:flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#fff;border:2px solid var(--control-line);font-weight:700;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s;user-select:none}
-.chip span:hover{border-color:var(--focus-light)}
-.chip input:focus-visible+span{outline:3px solid var(--focus-light);outline-offset:2px}
-.chip input:checked+span{background:var(--spruce);border-color:var(--spruce);color:var(--on-dark)}
-.chip input:checked+span:hover{border-color:var(--focus-light)}
-.field input,.field textarea{width:100%;font:16px/1.4 var(--font);color:var(--rail);background:#fff;border:2px solid var(--control-line);border-radius:var(--radius);padding:14px 14px;min-height:54px;transition:border-color .15s}
-.field textarea{min-height:110px;resize:vertical}
-.field input:hover,.field textarea:hover{border-color:var(--focus-light)}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--focus-light);box-shadow:0 0 0 3px rgba(148,96,8,.25)}
-.field input[aria-invalid=true]{border-color:#b3261e}
-.err{color:#9b2018;font-weight:700;font-size:15px;margin:8px 0 0;min-height:0}
-.err:empty{display:none}
-.form .btn{width:100%;max-width:420px}
-.form .btn-fill:hover,.form .btn-fill:focus-visible{outline:3px solid var(--focus-light);outline-offset:3px}
-.chip.pulse span{box-shadow:0 0 0 5px rgba(148,96,8,.3)}
-.form-note{color:var(--on-light-soft);font-size:15px;margin:-8px 0 0}
-.after{display:none;background:#fff;border-radius:var(--radius);padding:16px 18px;border:2px solid var(--control-line)}
-.after.show{display:block}
-.after p{margin:0 0 10px}
-.after pre{white-space:pre-wrap;font:15px/1.45 var(--font);background:var(--siding);padding:12px;border-radius:8px;margin:0 0 10px}
-.linkbtn{font:700 16px var(--font);background:none;border:2px solid var(--control-line);border-radius:8px;min-height:44px;padding:0 14px;cursor:pointer;color:var(--rail)}
-.linkbtn:hover,.linkbtn:focus-visible{border-color:var(--focus-light);outline:none}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.chips input[type=checkbox]:checked+label::before{content:"";width:12px;height:7px;border:solid currentColor;border-width:0 0 2.5px 2.5px;transform:rotate(-45deg) translateY(-2px);margin-right:10px}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:15px;color:var(--soft)}
+.sent{display:grid;gap:10px;background:var(--field);border-radius:var(--r-field);padding:16px}
+.sent p{color:var(--ink)}
+.sent a{white-space:nowrap;font-weight:600}
+.sent pre{margin:0;font:15px/1.5 var(--text);white-space:pre-wrap;color:var(--body)}
+.linkbtn{justify-self:start;min-height:44px;padding:0 18px;border-radius:var(--pill);border:2px solid var(--ink);background:transparent;color:var(--ink);font:400 16px/1 var(--display);cursor:pointer}
+@media (max-width:380px){.chips label{padding:0 14px}}
+@media (max-width:340px){.top .wrap{gap:8px}.tel{font-size:15px}.tel svg{display:none}}
 
-/* close + footer */
-.close{position:relative;overflow:hidden;padding:120px 0 0;background:radial-gradient(120% 80% at 30% 0%,#2b5444 0%,var(--spruce) 60%)}
-.close canvas{position:absolute;inset:0;width:100%;height:100%}
-.close .wrap{position:relative;z-index:2;pointer-events:none;padding-bottom:210px}
-.close .btn{max-width:420px}
-.close .wrap a{pointer-events:auto}
-.close h2{font-size:clamp(2.2rem,10vw,4.6rem);text-shadow:0 2px 24px rgba(15,34,25,.75)}
-.close p{color:var(--on-dark-soft);font-size:18px;margin:16px 0 22px;max-width:32ch;text-shadow:0 1px 14px rgba(15,34,25,.95),0 0 4px rgba(15,34,25,.8)}
-footer{background:var(--footer);color:var(--on-dark-soft);font-size:15px;padding:28px 0 calc(28px + env(safe-area-inset-bottom))}
-footer .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center}
-footer b{color:var(--on-dark);text-transform:uppercase;font-weight:900;letter-spacing:.02em;width:100%}
-footer a{min-height:44px;display:inline-flex;align-items:center;text-decoration-color:var(--cedar);text-underline-offset:4px}
-footer a:hover{color:var(--maple)}
+/* ---------- Close ---------- */
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark)}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--cedar)}
+.area{margin-top:22px;max-width:40ch}
 
-@media (max-width:429px){.brand b span{display:none}.brand b{font-size:15px}}
-/* ---------- wider screens ---------- */
-@media (min-width:640px){
-  .actions{flex-direction:row;max-width:580px}
-  .actions .btn{flex:1}
-}
-@media (min-width:900px){
-  body{font-size:18px}
-  .wrap{padding:0 40px}
-  .top .wrap{min-height:84px}
-  .brand svg{width:40px;height:40px}
-  .brand b{font-size:17px}
-  .tel{font-size:18px}
-  .hero-copy{padding-top:150px}
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+.nw{white-space:nowrap}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--cedar);color:var(--ink);box-shadow:0 10px 28px rgba(10,20,36,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid #fff;outline-offset:2px;border-radius:50%;box-shadow:0 0 0 8px var(--ink),0 10px 28px rgba(10,20,36,.3)}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:76px}
+  .brand b{font-size:25px}
+  .tel{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:112px;padding-bottom:120px}
+  .hero-bg img{object-position:50% 50%}
+  .hero-bg::after{background:linear-gradient(90deg,rgba(20,36,59,.9) 0%,rgba(20,36,59,.82) 45%,rgba(24,43,68,.55) 100%)}
   .promise{max-width:none}
-  .sec{padding:130px 0 120px}
-  .build-grid{grid-template-columns:1fr 1fr;gap:72px;align-items:start}
-  .steps{grid-template-columns:repeat(3,1fr);gap:40px}
-  .seam{height:120px;margin-top:-60px;margin-bottom:-60px}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:240px}
+  .fb{max-width:520px}
 }
 @media (min-width:1024px){
-  .form{grid-template-columns:1fr 1fr;max-width:none;column-gap:28px}
-  .form .full{grid-column:1/-1}
+  .rows{display:grid;grid-template-columns:1fr 1fr;column-gap:64px}
+  .rows li:nth-last-child(2):nth-child(odd){border-bottom:1px solid rgba(255,255,255,.12)}
+  .work .wrap{grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .work-head{display:grid;gap:28px}
+  .work .shot{grid-row:1;grid-column:2}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:active{transform:none}}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--cedar-ink)}
+.btn-primary:hover{background:var(--cedar-2);border-color:var(--cedar-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.row:hover .arrow,.fb:hover .arrow{background:var(--cedar);color:var(--ink)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+.chips input:checked+label:hover{outline:2px solid var(--focus);outline-offset:2px}
+form .btn-primary:hover,.linkbtn:hover{outline:2px solid var(--focus);outline-offset:2px}
+.sent a:hover{color:var(--navy)}
+.bigtel:hover{color:var(--cedar)}
+footer a:hover{color:var(--cedar)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <!--
-THESIS: The page is their own cedar deck at the edge of winter: maple leaves blow in and settle on the boards, and the visitor's finger sweeps them off. Refuses the stock contractor template (hero photo + three service cards + testimonial strip).
-OWN-WORLD: Spruce-green dusk ground, fresh-stained cedar planks with real grain and screw lines as the structural material, pale siding grey for reading sections, black-baluster ink, maple gold only on focus/hover. Heavy uppercase system sans.
-STORY: A Windsor homeowner sees a deck crew who cares about the finish, sees the real deck, and texts or messages for a free estimate before the snow.
-FIRST VIEWPORT: Header (plank mark + name left, 226-260-8133 top-right). Big headline "Your deck, done before winter." top-left, promise below, Free estimate (cedar fill) + Message us on Facebook (outline). Lower third: cedar deck boards with leaves landing and blowing; drag to sweep.
-FORM: Grounded list #1 (cedar deck + autumn leaves). Seed 794cc240 assigned #6 (end-grain rings); kept its discipline as real grain in every board, and the fluid-ink challenger's real wind field.
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+THESIS: A Windsor deck crew's site that earns trust through calm order (after lpmr.co.uk): their own cedar deck behind one claim (Windsor decks, done before winter), their own sign-off (Team ODB is on the job), and an easy way to ask for the free estimate they offer.
+OWN-WORLD: Off-white paper, slate navy (#223d5e) and deep navy (#14243b, faint diagonal lines) bands taken from the dark posts and black rails of their deck, fresh cedar (#dc955a) as the one warm accent (fills only; #8f4a17 when it has to be text on light). Cal Sans display, system body at 16/1.7. No logo exists, so the name is set as an ODB wordmark.
+STORY: The visitor sees a real deck they built, believes this crew builds with care near them (the photo, then Facebook for more), picks what they want built, and texts it or messages them for a free estimate.
+FIRST VIEWPORT: Paper header with the ODB wordmark left and tap-to-call number top right. Hero on their deck photo under a navy overlay: eyebrow, "Windsor decks, done before winter.", one promise line, two pill buttons (Get a free estimate, Message us on Facebook).
+FORM: calm-photo band system; the earlier cedar-boards-and-blowing-leaves world is in git history (8cea9cb) and offered as opt-in motion in HANDOFF.md.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md, and the finishing-rules checklist.
 -->
-<a class="skip" href="#build">Skip to content</a>
-
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-msgr" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.15.26.35.27.57l.05 1.78a.8.8 0 0 0 1.12.71l1.98-.87c.17-.08.36-.09.53-.04.91.25 1.88.38 2.91.38 5.64 0 10-4.13 10-9.7S17.64 2 12 2Zm6 7.46-2.93 4.66a1.5 1.5 0 0 1-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66a1.5 1.5 0 0 1 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.18.68.63Z"/></symbol>
+</svg>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Outdoor Design Build, back to top">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#c27a3f"/><rect x="0" y="20" width="64" height="3" fill="#7d4320"/><rect x="0" y="41" width="64" height="3" fill="#7d4320"/><circle cx="12" cy="11" r="2" fill="#5e3216"/><circle cx="52" cy="32" r="2" fill="#5e3216"/><circle cx="12" cy="53" r="2" fill="#5e3216"/><path d="M20 9c8 1 16-1 26 1M18 31c10-1 20 1 30-1M22 52c8 1 14-1 24 1" stroke="#a5602d" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
-      <b>Outdoor Design Build<span>Windsor, Ontario</span></b>
-    </a>
-    <a class="tel" href="tel:+12262608133">226-260-8133</a>
+    <a class="brand" href="#" aria-label="Outdoor Design Build, back to top"><b>ODB</b><span>Outdoor Design Build</span></a>
+    <a class="tel" href="tel:+12262608133"><svg aria-hidden="true"><use href="#i-phone"/></svg>226-260-8133</a>
   </div>
 </header>
 
 <main id="top">
-<section class="hero" aria-labelledby="h1">
-  <canvas id="heroLeaves" aria-hidden="true"></canvas>
-  <div class="deckpad" id="deckpad" aria-hidden="true"></div>
-  <div class="wrap hero-copy" id="heroCopy">
-    <h1 id="h1">Your deck, done <em>before winter.</em></h1>
-    <p class="promise">Windsor decks, designed with you and built like they're going in our own backyard.</p>
+<section class="hero" id="hero" aria-labelledby="h1">
+  <picture class="hero-bg">
+    <source media="(min-width:760px)" srcset="img/hero-wide.webp" width="1536" height="680">
+    <img src="img/hero-phone.webp" alt="" width="780" height="1114" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="wrap hero-copy">
+    <p class="eyebrow">Free estimates</p>
+    <h1 id="h1">Windsor decks, done <span class="accent">before winter.</span></h1>
+    <p class="promise">Custom designs, built like it's our own backyard.</p>
     <div class="actions">
-      <a class="btn btn-fill" href="#estimate">Get a free estimate</a>
-      <a class="btn btn-line" href="https://m.me/ODB.windsor">
-        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.15.26.35.27.57l.05 1.78a.8.8 0 0 0 1.12.71l1.98-.87c.17-.08.36-.09.53-.04.91.25 1.88.38 2.91.38 5.64 0 10-4.13 10-9.7S17.64 2 12 2Zm6 7.46-2.93 4.66a1.5 1.5 0 0 1-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66a1.5 1.5 0 0 1 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.18.68.63Z"/></svg>
-        Message us on Facebook
-      </a>
+      <a class="btn btn-primary" href="#ask">Get a free estimate</a>
+      <a class="btn btn-ghost" href="https://m.me/ODB.windsor" rel="noopener"><svg aria-hidden="true"><use href="#i-msgr"/></svg>Message us on Facebook</a>
     </div>
   </div>
 </section>
 
-<div class="seam" aria-hidden="true"><canvas data-seam></canvas></div>
-
-<section class="light sec" id="build" aria-labelledby="h-build">
-  <div class="wrap build-grid">
-    <div>
-      <h2 id="h-build">What we build</h2>
-      <ul class="rows">
-        <li><a class="row" href="#estimate" data-service="Deck">Decks<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a class="row" href="#estimate" data-service="Pergola">Pergolas<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a class="row" href="#estimate" data-service="Railings and stairs">Railings &amp; stairs<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a class="row" href="#estimate" data-service="Patio">Patios<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a class="row" href="#estimate" data-service="Landscaping">Landscaping<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></li>
-      </ul>
-    </div>
-    <div class="work">
-      <h2>Our work</h2>
-      <div class="photo"><img src="img/deck-01.webp" srcset="img/deck-01-640.webp 640w, img/deck-01.webp 1100w" sizes="(min-width:900px) 520px, 100vw" width="1100" height="1105" alt="A cedar deck with a pergola roof, black metal balusters and wide stairs down to the patio" loading="lazy" decoding="async" draggable="false"></div>
-      <div class="ledge" aria-hidden="true"><canvas data-seam></canvas></div>
-      <a class="fb" href="https://www.facebook.com/ODB.windsor/">
-        <span class="fbi"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.5v3.4h2.8V22H14v-10.1h2.8l.4-3.4H14Z"/></svg></span>
-        <span>Click to see more of our work.<small>2,600+ people follow our builds</small></span>
-        <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<div class="seam" aria-hidden="true"><canvas data-seam></canvas></div>
-
-<section class="sec" aria-labelledby="h-how">
+<section class="on-navy" id="services" aria-labelledby="h-svc">
   <div class="wrap">
-    <h2 id="h-how">How it works</h2>
+    <h2 id="h-svc" class="rise">What we <span class="accent">build.</span></h2>
+    <ul class="rows">
+      <li class="rise"><a class="row" data-job="Deck" href="#ask">Decks<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" data-job="Pergola" href="#ask">Pergolas<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" data-job="Railings and stairs" href="#ask">Railings &amp; stairs<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" data-job="Patio" href="#ask">Patios<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" data-job="Landscaping" href="#ask">Landscaping<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="on-paper work" id="work" aria-labelledby="h-work">
+  <div class="wrap">
+    <div class="work-head">
+      <h2 id="h-work" class="rise">Our work</h2>
+      <a class="fb rise" href="https://www.facebook.com/ODB.windsor/" rel="noopener">
+        <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of our work.</span>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
+    </div>
+    <figure class="shot rise"><img src="img/deck-01.webp" alt="A cedar deck with wide stairs, black metal balusters and a covered pergola across the back of a house" width="1100" height="1105" loading="lazy" decoding="async"><b>Deck, stairs &amp; pergola</b></figure>
+  </div>
+</section>
+
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
     <ol class="steps">
-      <li><div><h3>Tell us the idea</h3><p>A few lines and a photo of the yard is plenty. A sketch on a napkin works too.</p></div></li>
-      <li><div><h3>Free estimate</h3><p>We go over the size, the wood and the budget with you.</p></div></li>
-      <li><div><h3>We build it</h3><p>Your design, built square and solid, board by board.</p></div></li>
+      <li class="rise"><div><b>Send us the idea.</b><span>A few lines and a photo of the yard is plenty.</span></div></li>
+      <li class="rise"><div><b>Get a free estimate.</b><span>We go over the size, the wood and the budget with you.</span></div></li>
+      <li class="rise"><div><b>We build it.</b><span>Your design, built like it's going in our own backyard.</span></div></li>
     </ol>
   </div>
 </section>
 
-<div class="seam" aria-hidden="true"><canvas data-seam></canvas></div>
-
-<section class="light sec" id="estimate" aria-labelledby="h-est">
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
-    <h2 id="h-est">Free estimate</h2>
-    <form class="form" id="estForm" novalidate>
-      <fieldset class="full" aria-describedby="errProject">
+    <div class="head rise">
+      <p class="eyebrow">Free estimate</p>
+      <h2 id="h-ask">Tell us what you'd like built</h2>
+      <p class="lede">Add a photo of the yard to the text before you send it.</p>
+    </div>
+    <form id="quoteForm" class="rise" novalidate>
+      <fieldset class="field" id="f-job" aria-describedby="e-job">
         <legend>What are we building?</legend>
-        <div class="chips" id="chips">
-          <label class="chip"><input type="checkbox" name="project" value="Deck"><span>Deck</span></label>
-          <label class="chip"><input type="checkbox" name="project" value="Pergola"><span>Pergola</span></label>
-          <label class="chip"><input type="checkbox" name="project" value="Railings and stairs"><span>Railings &amp; stairs</span></label>
-          <label class="chip"><input type="checkbox" name="project" value="Patio"><span>Patio</span></label>
-          <label class="chip"><input type="checkbox" name="project" value="Landscaping"><span>Landscaping</span></label>
-          <label class="chip"><input type="checkbox" name="project" value="Something else"><span>Something else</span></label>
-        </div>
-        <p class="err" id="errProject" aria-live="polite"></p>
-      </fieldset>
-      <div class="field">
-        <label for="fName">Your name</label>
-        <input id="fName" name="name" autocomplete="name" maxlength="60" aria-describedby="errName">
-        <p class="err" id="errName" aria-live="polite"></p>
-      </div>
-      <div class="field">
-        <label for="fTown">Town or street <span class="opt">(optional)</span></label>
-        <input id="fTown" name="town" autocomplete="address-level2">
-      </div>
-      <fieldset class="full">
-        <legend>When would you like it done?</legend>
         <div class="chips">
-          <label class="chip"><input type="radio" name="when" value="Before winter"><span>Before winter</span></label>
-          <label class="chip"><input type="radio" name="when" value="This spring"><span>This spring</span></label>
-          <label class="chip"><input type="radio" name="when" value="Just planning"><span>Just planning</span></label>
+          <input type="checkbox" name="job" id="j1" value="Deck"><label for="j1">Deck</label>
+          <input type="checkbox" name="job" id="j2" value="Pergola"><label for="j2">Pergola</label>
+          <input type="checkbox" name="job" id="j3" value="Railings and stairs"><label for="j3">Railings &amp; stairs</label>
+          <input type="checkbox" name="job" id="j4" value="Patio"><label for="j4">Patio</label>
+          <input type="checkbox" name="job" id="j5" value="Landscaping"><label for="j5">Landscaping</label>
+          <input type="checkbox" name="job" id="j6" value="Something else"><label for="j6">Something else</label>
+        </div>
+        <p class="err" id="e-job" role="alert">Pick at least one, or choose "Something else".</p>
+      </fieldset>
+      <div class="field" id="f-where">
+        <label for="where">Where is the job?</label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="Town or street, e.g. South Windsor" aria-describedby="e-where">
+        <p class="err" id="e-where" role="alert">Add the town or street so we know where to come.</p>
+      </div>
+      <fieldset class="field">
+        <legend>When would you like it done? <small>(optional)</small></legend>
+        <div class="chips">
+          <input type="radio" name="when" id="w1" value="Before winter"><label for="w1">Before winter</label>
+          <input type="radio" name="when" id="w2" value="This spring"><label for="w2">This spring</label>
+          <input type="radio" name="when" id="w3" value="Just planning"><label for="w3">Just planning</label>
         </div>
       </fieldset>
-      <div class="field full">
-        <label for="fNotes">Anything else <span class="opt">(optional)</span></label>
-        <textarea id="fNotes" name="notes" maxlength="600" placeholder="Size, wood, what's there now…"></textarea>
+      <div class="field">
+        <label for="details">Anything else? <small>(optional)</small></label>
+        <textarea id="details" name="details" maxlength="600" placeholder="Rough size, the wood you like, what's there now"></textarea>
       </div>
-      <div class="full">
-        <button class="btn btn-fill" type="submit">Text this to Team ODB</button>
+      <div class="field">
+        <label for="name">Your name <small>(optional)</small></label>
+        <input type="text" id="name" name="name" autocomplete="given-name" maxlength="60">
       </div>
-      <p class="form-note full">Opens your texting app with this written out.</p>
-      <div class="after full" id="after" role="status">
-        <p><b>Didn't open?</b> Copy this and send it to 226-260-8133, or paste it into a <a href="https://m.me/ODB.windsor">Facebook message</a>.</p>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Team ODB</button>
+      <div class="sent" id="sent" role="status" hidden>
+        <p>Didn't open your messages? Send this to <a href="tel:+12262608133">226-260-8133</a> or paste it into a <a href="https://m.me/ODB.windsor" rel="noopener">Facebook message</a>.</p>
         <pre id="msgOut"></pre>
         <button class="linkbtn" type="button" id="copyBtn">Copy message</button>
       </div>
+      <p class="after">Opens your messages with this written out.</p>
     </form>
   </div>
 </section>
 
-<div class="seam" aria-hidden="true"><canvas data-seam></canvas></div>
-
-<section class="close" aria-labelledby="h-close">
-  <canvas id="closeLeaves" aria-hidden="true"></canvas>
+<section class="on-navy close" id="close" aria-labelledby="h-close">
   <div class="wrap">
-    <h2 id="h-close">Get it built before the snow.</h2>
-    <p>Send us the idea tonight and we'll get back to you about a free estimate.</p>
-    <a class="btn btn-line" href="https://m.me/ODB.windsor">
-      <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.15.26.35.27.57l.05 1.78a.8.8 0 0 0 1.12.71l1.98-.87c.17-.08.36-.09.53-.04.91.25 1.88.38 2.91.38 5.64 0 10-4.13 10-9.7S17.64 2 12 2Zm6 7.46-2.93 4.66a1.5 1.5 0 0 1-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66a1.5 1.5 0 0 1 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.18.68.63Z"/></svg>
-      Message us on Facebook
-    </a>
+    <div class="rise">
+      <h2 id="h-close">Get it built <span class="accent">before the snow.</span></h2>
+      <p class="who">Outdoor Design Build. Team ODB is on the job.</p>
+      <p class="area">Based in Windsor, Ontario. Not sure we come out to your street? Call and ask.</p>
+    </div>
+    <a class="bigtel rise" href="tel:+12262608133"><svg aria-hidden="true"><use href="#i-phone"/></svg>226-260-8133</a>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <b>Outdoor Design Build</b>
-    <a href="tel:+12262608133">226-260-8133</a>
-    <a href="https://www.facebook.com/ODB.windsor/">Facebook</a>
-    <span>Windsor, Ontario</span>
+    <span>Outdoor Design Build · Windsor, Ontario · <a class="nw" href="tel:+12262608133">226-260-8133</a></span>
+    <nav aria-label="Contact">
+      <a href="https://www.facebook.com/ODB.windsor/" rel="noopener">Facebook</a>
+    </nav>
   </div>
 </footer>
 
+<a class="float" id="float" href="sms:+12262608133?&amp;body=Hi%20Team%20ODB!%20I%20found%20your%20website.%20I'd%20like%20a%20free%20estimate%20for%3A%20" aria-label="Text Team ODB"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
 <script>
-/* ===== Leaves on cedar: the signature living element =====
-   One shared loop drives every field (hero, plank seams, photo ledge, closing scene).
-   Boards are drawn once onto a canvas underneath; each frame redraws only the leaves.
-   Tunables up top so speeds and counts are easy to change. */
+/* ===== Config ===== */
+var CONFIG = {
+  PHONE: '+12262608133',
+  FLOAT: true,     // the floating text circle; false removes it
+  FONT_WAIT: 900   // ms to wait for Cal Sans before skipping the H1 bounce-in
+};
+document.documentElement.classList.add('js');
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
 (function(){
-  var TUNE={
-    heroLeavesPhone:34, heroLeavesDesk:84,
-    seamLeavesPhone:7,  seamLeavesDesk:14,
-    closeLeavesPhone:26, closeLeavesDesk:60,
-    leafPhone:17, leafDesk:20,
-    wind:34,            // steady breeze, px/s, left to right
-    gust:70,            // extra gust strength
-    gravity:46,         // fall speed pull
-    blowRadiusPhone:90, blowRadiusDesk:130,
-    blowForce:950,      // push away from the finger/mouse
-    carry:1.1,          // share of pointer velocity handed to leaves (the wake of the stroke)
-    liftRate:0.015,     // chance per second a gust lifts a resting leaf
-    respawnDelay:[4,10] // seconds before a blown-away leaf drifts back, so a swept deck stays clean a while
-  };
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var phone=innerWidth<700;
-  var DPR=Math.min(window.devicePixelRatio||1,1.5);
-  // late-October Windsor: mostly reds, rust and browned leaves, a little orange
-  var COLORS=[['#b8382a','#8f2a1f'],['#c8442b','#a3321f'],['#a8552a','#83401d'],['#c4622a','#9c4a1e'],['#8a4a26','#6b3519'],['#d98a2e','#b06c22'],['#9e3324','#76261b']];
-
-  /* --- leaf sprites (maple + elm), drawn once --- */
-  // right half of a sugar maple outline, tip at top, stem at bottom; mirrored for the left
-  var MAPLE=[[0,-1],[.09,-.74],[.22,-.8],[.17,-.56],[.33,-.6],[.24,-.36],[.16,-.2],[.42,-.3],[.52,-.48],[.6,-.36],[.78,-.46],[.72,-.3],[.95,-.3],[.7,-.12],[.74,0],[.46,.02],[.3,.12],[.52,.28],[.62,.52],[.4,.4],[.3,.5],[.2,.34],[.06,.36],[0,.34]];
-  var VEINS=[[0,-.86],[.86,-.3],[.56,.46],[-.86,-.3],[-.56,.46]];
-  function shade(hex,p){var n=parseInt(hex.slice(1),16),r=n>>16,g=n>>8&255,b=n&255,f=function(v){return Math.max(0,Math.min(255,Math.round(v+p*2.55)))};return'rgb('+f(r)+','+f(g)+','+f(b)+')';}
-  function sprite(kind,col,size,back){
-    var s=Math.ceil(size*DPR*2.4),c=document.createElement('canvas');c.width=c.height=s;
-    var g=c.getContext('2d'),R=s*.4;g.translate(s/2,s/2+R*.12);
-    g.beginPath();
-    if(kind==='maple'){
-      MAPLE.forEach(function(p,i){i?g.lineTo(p[0]*R,p[1]*R):g.moveTo(p[0]*R,p[1]*R);});
-      for(var i=MAPLE.length-2;i>0;i--)g.lineTo(-MAPLE[i][0]*R,MAPLE[i][1]*R);
-    } else {
-      g.translate(0,-R*.12);
-      g.moveTo(0,-R);g.bezierCurveTo(R*.62,-R*.55,R*.55,R*.45,0,R*.78);g.bezierCurveTo(-R*.55,R*.45,-R*.62,-R*.55,0,-R);
-    }
-    g.closePath();
-    var gr=g.createRadialGradient(-R*.2,-R*.25,R*.05,0,0,R*1.05);
-    gr.addColorStop(0,back?col[1]:shade(col[0],14));gr.addColorStop(.7,back?shade(col[1],-6):col[0]);gr.addColorStop(1,col[1]);
-    g.fillStyle=gr;g.fill();
-    g.lineWidth=Math.max(1,s*.01);g.strokeStyle='rgba(60,25,10,.4)';g.lineJoin='round';g.stroke();
-    g.strokeStyle='rgba(255,226,180,'+(back?.16:.3)+')';g.lineWidth=Math.max(.8,s*.011);g.lineCap='round';
-    if(kind==='maple'){
-      VEINS.forEach(function(v){g.beginPath();g.moveTo(0,R*.3);g.lineTo(v[0]*R*.85,v[1]*R*.85);g.stroke();});
-      g.strokeStyle='rgba(80,38,14,.9)';g.lineWidth=Math.max(1.2,s*.02);g.beginPath();g.moveTo(0,R*.3);g.quadraticCurveTo(R*.02,R*.6,R*.1,R*.85);g.stroke();
-    } else {
-      g.beginPath();g.moveTo(0,-R*.85);g.lineTo(0,R*.95);g.stroke();
-      for(var k=-3;k<=2;k++){var y=k*R*.22;g.beginPath();g.moveTo(0,y);g.lineTo(R*.36,y-R*.18);g.moveTo(0,y);g.lineTo(-R*.36,y-R*.18);g.stroke();}
-    }
-    return c;
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  // wait for Cal Sans so the line breaks we keep are the real ones; if it takes too long, show the plain heading instead
+  var done=false;h.classList.add('wait');
+  function give(){if(!done){done=true;h.classList.remove('wait')}}
+  setTimeout(give,CONFIG.FONT_WAIT);
+  if(document.fonts&&document.fonts.load)document.fonts.load('400 40px "Cal Sans"').then(function(){if(!done){done=true;go()}},give);else give();
+  function go(){
+  var plain=h.innerHTML,i=0,last=null,tops=[],wi=0;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  // letter spans lose kerning and run wider, so note where the plain heading breaks its lines and keep those breaks
+  (function measure(node){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===1)return measure(n);
+      if(n.nodeType!==3)return;
+      var re=/\S+/g,m,r=document.createRange();
+      while((m=re.exec(n.textContent))){r.setStart(n,m.index);r.setEnd(n,m.index+m[0].length);tops.push(r.getClientRects()[0].top)}
+    });
+  })(h);
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          if(wi>0&&tops[wi]>tops[wi-1]+2)into.appendChild(document.createElement('br'));
+          wi++;
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
   }
-  var SPR=[];
-  COLORS.forEach(function(col){['maple','maple','elm'].forEach(function(k){SPR.push({front:sprite(k,col,22,false),back:sprite(k,col,22,true)});});});
-
-  /* --- cedar boards, drawn once per size --- */
-  function rnd(a,b){return a+Math.random()*(b-a);}
-  function drawDeck(g,w,top,h,opts){
-    var cedars=['#c27a3f','#bb7239','#c88145','#b56c36','#c47c42','#be7640']; // one cedar stain, board-to-board shifts
-    var y=top,i=0,bh=opts.board;
-    g.fillStyle='#3a2416';g.fillRect(0,top,w,h);
-    while(y<top+h){
-      var hh=Math.min(bh*(1+i*opts.grow),top+h-y);
-      var base=cedars[(Math.random()*cedars.length)|0];
-      var seg=opts.joint+((i*137)%opts.joint)*.6, x=-((i*91)%seg); // staggered butt joints
-      while(x<w){
-        var len=seg*rnd(.8,1.2);base=shade(cedars[(Math.random()*cedars.length)|0],rnd(-3,3)).replace(/rgb\((\d+),(\d+),(\d+)\)/,function(m,r,g2,b){return'#'+[r,g2,b].map(function(v){return(+v).toString(16).padStart(2,'0')}).join('')});
-        var grd=g.createLinearGradient(0,y,0,y+hh);
-        grd.addColorStop(0,shade(base,7));grd.addColorStop(.55,base);grd.addColorStop(1,shade(base,-9));
-        g.fillStyle=grd;g.fillRect(x+1,y+1,len-2,hh-2.4);
-        g.save();g.beginPath();g.rect(x+1,y+1,len-2,hh-2.4);g.clip();
-        var lines=Math.max(3,Math.round(hh/4));
-        for(var L=0;L<lines;L++){ // grain
-          var gy=y+hh*(L+.5)/lines+rnd(-1,1),amp=rnd(.8,2.6),f=rnd(.004,.014),ph=rnd(0,6),drift=rnd(-.012,.012);
-          g.strokeStyle='rgba(110,55,20,'+rnd(.12,.3)+')';g.lineWidth=rnd(.5,1.4);g.beginPath();
-          for(var gx=x;gx<=x+len;gx+=6){var yy=gy+Math.sin(gx*f+ph)*amp+Math.sin(gx*f*3.7+ph*2)*amp*.35+(gx-x)*drift;gx===x?g.moveTo(gx,yy):g.lineTo(gx,yy);}
-          g.stroke();
-        }
-        if(len>120&&Math.random()<.55){ // cathedral grain: nested arches of flat-sawn boards
-          var cx=x+len*rnd(.3,.7),cy=y+hh*rnd(.45,.65),rings=3+((Math.random()*3)|0),dir=Math.random()<.5?1:-1;
-          for(var k=0;k<rings;k++){var rx=len*rnd(.08,.12)*(k+1),ry=hh*.11*(k+1);
-            g.strokeStyle='rgba(105,50,18,'+rnd(.16,.3)+')';g.lineWidth=rnd(.7,1.3);g.beginPath();
-            for(var q=-1;q<=1.001;q+=.08){var px=cx+dir*rx*(1-q*q)-dir*rx*.5,py=cy+q*ry+Math.sin(q*5+k)*.6;q===-1?g.moveTo(px,py):g.lineTo(px,py);}
-            g.stroke();}
-        }
-        if(Math.random()<.35){var kx=x+rnd(20,len-20),ky=y+hh*rnd(.3,.7);g.fillStyle='rgba(95,45,18,.45)';g.beginPath();g.ellipse(kx,ky,rnd(3,6),Math.min(hh*.22,rnd(2,3.5)),0,0,7);g.fill();}
-        g.restore();
-        g.fillStyle='rgba(55,32,18,.75)'; // screws over each joist
-        for(var jx=opts.joistOff;jx<w;jx+=opts.joist){if(jx>x+6&&jx<x+len-6){var sj=jx+rnd(-1.5,1.5);g.beginPath();g.arc(sj,y+hh*rnd(.26,.34),1.3,0,7);g.fill();g.beginPath();g.arc(sj+rnd(-1,1),y+hh*rnd(.66,.74),1.3,0,7);g.fill();}}
-        x+=len;
-      }
-      y+=hh;i++;
-    }
-    if(opts.band){ // a plank seam: keep only its boards, with a dark gap line on top
-      g.clearRect(0,top+opts.band,w,h);g.fillStyle='rgba(58,36,22,.9)';g.fillRect(0,top-1,w,1.5);return;
-    }
-    var lt=g.createRadialGradient(w*.72,top+h*.15,10,w*.72,top+h*.15,Math.max(w,h)*.9); // warm dusk light falling across the boards
-    lt.addColorStop(0,'rgba(255,196,120,.16)');lt.addColorStop(.5,'rgba(255,196,120,0)');lt.addColorStop(1,'rgba(20,10,4,.22)');
-    g.fillStyle=lt;g.fillRect(0,top,w,h);
-    var sh=g.createLinearGradient(0,top-18,0,top+26); // soft shadow where the deck meets the yard
-    sh.addColorStop(0,'rgba(15,34,25,0)');sh.addColorStop(.4,'rgba(15,34,25,.45)');sh.addColorStop(1,'rgba(15,34,25,0)');
-    g.fillStyle=sh;g.fillRect(0,top-18,w,44);
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);h.style.whiteSpace='nowrap';
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.style.whiteSpace='';h.removeAttribute('aria-label')});
+  h.classList.remove('wait');
   }
-
-  /* --- one field of leaves over one board canvas --- */
-  function Field(canvas,cfg){
-    this.c=canvas;this.g=canvas.getContext('2d');this.cfg=cfg;this.leaves=[];this.w=0;this.h=0;this.visible=true;
-    this.deck=document.createElement('canvas');this.deck.setAttribute('aria-hidden','true');this.deck.style.pointerEvents='none';
-    canvas.parentNode.insertBefore(this.deck,canvas);
-  }
-  Field.prototype.resize=function(){
-    var r=this.c.getBoundingClientRect(),w=Math.round(r.width),h=Math.round(r.height);
-    if(w===this.w&&h===this.h)return false; // address-bar resizes keep what the visitor did
-    this.w=w;this.h=h;this.c.width=w*DPR;this.c.height=h*DPR;
-    this.top=this.cfg.deckTop(w,h);
-    this.deck.width=w*DPR;this.deck.height=h*DPR;
-    var dg=this.deck.getContext('2d');dg.setTransform(DPR,0,0,DPR,0,0);
-    var o=this.cfg.deckOpts(w,h);this.band=o.band||0;
-    var cr=this.c.getBoundingClientRect();
-    this.avoid=(this.cfg.avoid?this.cfg.avoid():[]).map(function(el){var b=el.getBoundingClientRect();return[b.left-cr.left,b.top-cr.top,b.right-cr.left,b.bottom-cr.top];});
-    drawDeck(dg,w,this.top,h-this.top,o);
-    var n=this.cfg.count();this.leaves=[];
-    for(var i=0;i<n;i++)this.leaves.push(this.spawn(Math.random()<this.cfg.startResting));
-    return true;
-  };
-  Field.prototype.spawn=function(resting){
-    var w=this.w,h=this.h,top=this.top,sz=this.cfg.size*rnd(.8,1.25);
-    var lo=top+sz*.35,hi=this.band?top+this.band-3:h-sz*.4;if(this.band)lo=top+3;
-    var L={s:SPR[(Math.random()*SPR.length)|0],size:sz,x:rnd(-20,w+20),y:rnd(-h*.6,top*.7),
-      vx:rnd(-10,20),vy:rnd(0,30),a:rnd(0,6.28),va:rnd(-1.8,1.8),flip:rnd(0,6.28),vf:rnd(2,4.5),ph:rnd(0,6.28),
-      rest:!!resting,restY:rnd(lo,hi),wait:0,slide:0,settle:0};
-    if(resting)L.y=L.restY;
-    return L;
-  };
-  Field.prototype.relaunch=function(L){
-    var n=this.spawn(false);
-    if(Math.random()<.6){n.x=rnd(-30,this.w*.7);n.y=-30;}else{n.x=-30;n.y=rnd(-20,this.top*.6);}
-    n.wait=rnd(TUNE.respawnDelay[0],TUNE.respawnDelay[1]);
-    for(var k in n)L[k]=n[k];
-  };
-  Field.prototype.step=function(dt,t,P){
-    var w=this.w,h=this.h,ls=this.leaves,px=-1e4,py=-1e4,pvx=0,pvy=0,R=phone?TUNE.blowRadiusPhone:TUNE.blowRadiusDesk;
-    if(P.active){var rect=this.c.getBoundingClientRect();px=P.x-rect.left;py=P.y-rect.top;pvx=P.vx;pvy=P.vy;} // rect read every frame: the page scrolls under the finger
-    var gust=Math.max(0,Math.sin(t*.37)+.6*Math.sin(t*.91+1.3)+.35*Math.sin(t*2.3));
-    for(var i=0;i<ls.length;i++){
-      var L=ls[i];
-      if(L.wait>0){L.wait-=dt;continue;}
-      var dx=L.x-px,dy=L.y-py,d2=dx*dx+dy*dy;
-      if(d2<R*R){
-        var d=Math.sqrt(d2)||1,f=(1-d/R);
-        if(L.rest){L.rest=false;L.vy-=rnd(60,140);}
-        L.vx+=(dx/d*TUNE.blowForce*f+pvx*TUNE.carry*f)*dt*3;
-        L.vy+=(dy/d*TUNE.blowForce*f+pvy*TUNE.carry*f)*dt*3-120*f*dt;
-        L.va+=rnd(-8,8)*f*dt*4;
-      }
-      if(L.rest){
-        if(L.slide){L.x+=L.slide*dt;L.slide*=Math.pow(.03,dt);if(Math.abs(L.slide)<2)L.slide=0;} // skid to a stop
-        if(L.settle>0)L.settle=Math.max(0,L.settle-dt);
-        L.a+=Math.sin(t*3+L.ph)*.004*gust; // shiver in the wind
-        if(gust>1.25&&Math.random()<TUNE.liftRate*dt*gust){L.rest=false;L.vy=-rnd(30,90);L.vx=rnd(30,90);}
-        continue;
-      }
-      // the breeze: steady push, gusts, and swirls that vary with height and time
-      var wx=TUNE.wind+TUNE.gust*gust+28*Math.sin(L.y*.012+t*.8)+18*Math.sin(t*1.3+L.ph);
-      var wy=22*Math.sin(L.x*.009-t*1.1+L.ph)+12*Math.cos(t*.7+L.y*.02);
-      L.vx+=(wx-L.vx)*1.4*dt+Math.cos(t*L.vf+L.ph)*60*dt;   // side-to-side falling sway
-      L.vy+=(wy-L.vy)*1.1*dt+TUNE.gravity*dt;
-      L.x+=L.vx*dt;L.y+=L.vy*dt;
-      L.a+=L.va*dt;L.va*=Math.pow(.6,dt);L.va+=Math.sin(t*1.7+L.ph)*.9*dt;
-      L.flip+=L.vf*dt*(.6+Math.min(1,Math.abs(L.vx)/120));
-      if(L.vy>0&&L.y>=L.restY&&L.y<h){ // settle on the boards
-        L.rest=true;L.y=L.restY;L.slide=Math.max(-60,Math.min(60,L.vx*.3));L.vx=L.vy=0;L.settle=.18;
-      }
-      if(L.x>w+40||L.x<-60||L.y>h+40||L.y<-h)this.relaunch(L);
-    }
-  };
-  Field.prototype.draw=function(){
-    var g=this.g;g.setTransform(1,0,0,1,0,0);g.clearRect(0,0,this.c.width,this.c.height);
-    g.setTransform(DPR,0,0,DPR,0,0);
-    var ls=this.leaves,ft=this.cfg.fadeTop,h=this.h;
-    for(var pass=0;pass<2;pass++)for(var i=0;i<ls.length;i++){ // resting leaves first, flying ones above
-      var L=ls[i];if(L.wait>0||(pass===0)!==L.rest)continue;
-      var fy=Math.cos(L.flip),sz=L.size,alpha=1;
-      var sy=L.rest?.86+.14*Math.abs(fy):Math.max(.18,Math.abs(fy));
-      if(L.settle>0)sy=sy+(Math.max(.18,Math.abs(fy))-sy)*(L.settle/.18); // ease flat as it lands
-      if(!L.rest){ // fade near the field's edges so leaves never cut off at a straight line or cross the header
-        alpha=Math.max(0,Math.min(1,(L.y-ft[0])/ft[1],(h-L.y)/24))*.94;
-        for(var k=0;k<this.avoid.length;k++){ // fade out over headline, promise, buttons: no leaf runs through text
-          var a=this.avoid[k],ox=Math.max(a[0]-L.x,0,L.x-a[2]),oy=Math.max(a[1]-L.y,0,L.y-a[3]);
-          alpha*=Math.min(1,Math.max(ox,oy)/(sz*1.6+10));
-        }
-        if(alpha<=0.02)continue;
-      }
-      var img=fy<0&&!L.rest?L.s.back:L.s.front;
-      if(L.rest){g.globalAlpha=.3;g.fillStyle='#2a170c';g.beginPath();g.ellipse(L.x+2,L.y+3,sz*.42,sz*.32,L.a,0,7);g.fill();}
-      g.globalAlpha=alpha;
-      g.save();g.translate(L.x,L.y);g.rotate(L.a);g.scale(1,sy);
-      g.drawImage(img,-sz*1.2,-sz*1.2,sz*2.4,sz*2.4);
-      g.restore();g.globalAlpha=1;
-    }
-  };
-
-  /* --- build the fields --- */
-  var fields=[];window.__leafFields=fields;
-  var leaf=function(){return phone?TUNE.leafPhone:TUNE.leafDesk};
-  var hero=document.getElementById('heroLeaves'),copy=document.getElementById('heroCopy'),pad=document.getElementById('deckpad');
-  if(hero){
-    fields.push(new Field(hero,{
-      count:function(){return phone?TUNE.heroLeavesPhone:TUNE.heroLeavesDesk},
-      size:leaf(),startResting:.6,fadeTop:[64,50],
-      avoid:function(){return [].slice.call(copy.children);},
-      deckTop:function(w,h){
-        var r=copy.getBoundingClientRect(),hr=hero.getBoundingClientRect();
-        var top=Math.round(r.bottom-hr.top+(w<700?30:56));
-        top=Math.min(top,h-150);pad.style.height=(h-top)+'px';return top;
-      },
-      deckOpts:function(w){return{board:w<700?20:26,grow:.075,joint:w<700?260:420,joist:w<700?92:120,joistOff:30}}
-    }));
-  }
-  var close=document.getElementById('closeLeaves');
-  if(close){
-    var cwrap=close.parentNode.querySelector('.wrap');
-    fields.push(new Field(close,{
-      count:function(){return phone?TUNE.closeLeavesPhone:TUNE.closeLeavesDesk},
-      size:leaf(),startResting:.65,fadeTop:[0,30],
-      avoid:function(){return [].slice.call(cwrap.children);},
-      deckTop:function(w,h){
-        var a=cwrap.lastElementChild.getBoundingClientRect(),cr=close.getBoundingClientRect();
-        return Math.min(Math.round(a.bottom-cr.top+40),h-150);
-      },
-      deckOpts:function(w){return{board:w<700?20:26,grow:.075,joint:w<700?260:420,joist:w<700?92:120,joistOff:60}}
-    }));
-  }
-  document.querySelectorAll('canvas[data-seam]').forEach(function(c){
-    fields.push(new Field(c,{
-      count:function(){return phone?TUNE.seamLeavesPhone:TUNE.seamLeavesDesk},
-      size:leaf()*.82,startResting:.75,fadeTop:[0,24],
-      deckTop:function(w,h){return Math.round(h/2-(w<900?14:18))},
-      deckOpts:function(w){return{board:w<900?14:18,grow:0,joint:w<700?300:460,joist:w<700?92:120,joistOff:Math.random()*80,band:w<900?28:36}}
-    }));
-  });
-  fields.forEach(function(f){f.resize();});
-
-  var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){
-    phone=innerWidth<700;fields.forEach(function(f){f.resize();});
-    if(reduce)fields.forEach(function(f){f.draw();});
-  },120);});
-
-  if(reduce){fields.forEach(function(f){f.leaves.forEach(function(L){L.wait=0;if(!L.rest){L.rest=true;L.y=L.restY;}});f.draw();});return;}
-
-  /* --- pointer: mouse and finger --- */
-  var P={x:-1e4,y:-1e4,vx:0,vy:0,lx:null,ly:null,active:false};
-  function move(x,y){P.x=x;P.y=y;P.active=true;}
-  addEventListener('pointermove',function(e){move(e.clientX,e.clientY);},{passive:true});
-  addEventListener('pointerdown',function(e){move(e.clientX,e.clientY);P.lx=null;},{passive:true});
-  addEventListener('touchstart',function(e){var t=e.touches[0];if(t){move(t.clientX,t.clientY);P.lx=null;}},{passive:true});
-  addEventListener('touchmove',function(e){var t=e.touches[0];if(t)move(t.clientX,t.clientY);},{passive:true});
-  addEventListener('touchend',function(){P.active=false;},{passive:true});
-  document.addEventListener('mouseleave',function(){P.active=false;});
-  if(pad)pad.addEventListener('touchmove',function(e){e.preventDefault();},{passive:false}); // drag in any direction on the deck
-
-  /* --- one loop; it sleeps when no field is on screen or the tab is hidden --- */
-  var running=false,last=0,t0=performance.now();
-  function start(){if(running||document.hidden)return;running=true;last=performance.now();requestAnimationFrame(tick);}
-  function tick(now){
-    var any=false,dt=Math.min(.05,(now-last)/1000);last=now;var t=(now-t0)/1000;
-    if(P.lx!==null&&dt>0){P.vx=P.vx*.6+(P.x-P.lx)/dt*.4;P.vy=P.vy*.6+(P.y-P.ly)/dt*.4;}
-    P.lx=P.x;P.ly=P.y;
-    for(var i=0;i<fields.length;i++){var f=fields[i];if(!f.visible)continue;any=true;f.step(dt,t,P);f.draw();}
-    if(!any||document.hidden){running=false;return;}
-    requestAnimationFrame(tick);
-  }
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.__f.visible=e.isIntersecting;});start();});
-    fields.forEach(function(f){f.c.__f=f;f.visible=false;io.observe(f.c);});
-  }
-  document.addEventListener('visibilitychange',start);
-  start();
 })();
 
-/* ===== Estimate form: composes a text to Team ODB ===== */
+/* ===== Service rows pre-select the matching chip in the form ===== */
 (function(){
-  var NUM='+12262608133';
-  var form=document.getElementById('estForm');if(!form)return;
-  // service rows pre-tick their chip
-  document.querySelectorAll('.row[data-service]').forEach(function(a){
-    a.addEventListener('click',function(){
-      var v=a.getAttribute('data-service');
-      form.querySelectorAll('input[name=project]').forEach(function(i){if(i.value===v){i.checked=true;var c=i.parentNode;c.classList.add('pulse');setTimeout(function(){c.classList.remove('pulse');},1600);}});
-      setTimeout(function(){var n=document.getElementById('fName');if(n&&matchMedia('(hover:hover)').matches)n.focus({preventScroll:true});},500);
+  [].forEach.call(document.querySelectorAll('.row[data-job]'),function(row){
+    row.addEventListener('click',function(){
+      var box=document.querySelector('#quoteForm input[name=job][value="'+row.getAttribute('data-job')+'"]');
+      if(box){box.checked=true;document.getElementById('f-job').classList.remove('bad')}
     });
   });
-  function compose(){
-    var p=[].map.call(form.querySelectorAll('input[name=project]:checked'),function(i){return i.value;});
-    var w=form.querySelector('input[name=when]:checked');
-    var name=form.name.value.trim(),town=form.town.value.trim(),notes=form.notes.value.trim();
-    var lines=['Hi Team ODB! I\'d like a free estimate.'];
-    if(p.length)lines.push('Project: '+p.join(', '));
-    if(name)lines.push('Name: '+name);
-    if(town)lines.push('Where: '+town);
-    if(w)lines.push('When: '+w.value);
-    if(notes)lines.push('Details: '+notes);
-    return lines.join('\n');
-  }
+})();
+
+/* ===== Quote form: composes a text to Team ODB ===== */
+(function(){
+  var form=document.getElementById('quoteForm');if(!form)return;
+  var sent=document.getElementById('sent'),out=document.getElementById('msgOut');
+  function val(id){return document.getElementById(id).value.trim()}
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.type==='text'&&e.target.value.trim()){f.classList.remove('bad');e.target.setAttribute('aria-invalid','false')}});
+  form.addEventListener('change',function(e){if(e.target.name==='job'&&e.target.checked)document.getElementById('f-job').classList.remove('bad')});
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    var ok=true,eP=document.getElementById('errProject'),eN=document.getElementById('errName'),nm=form.name;
-    var any=form.querySelectorAll('input[name=project]:checked').length||form.notes.value.trim();
-    eP.textContent=any?'':'Pick what you\'d like built, or describe it below.';
-    if(!any)ok=false;
-    if(!nm.value.trim()){eN.textContent='Add your name so we know who\'s texting.';nm.setAttribute('aria-invalid','true');ok=false;}
-    else{eN.textContent='';nm.removeAttribute('aria-invalid');}
-    if(!ok){(any?nm:form.querySelector('input[name=project]')).focus();return;}
-    var msg=compose();
-    document.getElementById('msgOut').textContent=msg;
-    document.getElementById('after').classList.add('show');
-    location.href='sms:'+NUM+'?&body='+encodeURIComponent(msg);
+    var jobs=[].map.call(form.querySelectorAll('input[name=job]:checked'),function(b){return b.value});
+    var w=form.querySelector('input[name=when]:checked');
+    var where=val('where'),details=val('details'),name=val('name');
+    var whereEl=document.getElementById('where');
+    document.getElementById('f-job').classList.toggle('bad',!jobs.length);
+    document.getElementById('f-where').classList.toggle('bad',!where);
+    whereEl.setAttribute('aria-invalid',where?'false':'true');
+    if(!jobs.length){document.getElementById('j1').focus();return}
+    if(!where){whereEl.focus();return}
+    var msg='Hi Team ODB!'+(name?' This is '+name+'.':'')+' I\'d like a free estimate for: '+jobs.join(', ')+'. The job is in '+where+'.';
+    if(w)msg+=' When: '+w.value+'.';
+    if(details)msg+=' '+details;
+    out.textContent=msg;
+    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    // if no messages app opened (desktop, some in-app browsers), show the message to send another way
+    setTimeout(function(){if(document.visibilityState==='visible')sent.hidden=false},900);
   });
   document.getElementById('copyBtn').addEventListener('click',function(){
-    var b=this,txt=document.getElementById('msgOut').textContent;
-    function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy message';},1800);}
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,function(){sel();});}else sel();
-    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('msgOut'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected: copy it';}
+    var b=this,t=out.textContent;
+    function ok(){b.textContent='Copied'}
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(ok,function(){b.textContent='Select the text above to copy'});
+    else b.textContent='Select the text above to copy';
   });
+})();
+
+/* ===== Floating text circle: shows after the hero, hides over the service rows and while the form is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  // each service row is already a way in, and the circle would sit on their arrows
+  var pastHero=false,formIn=false,svcIn=false;
+  function sync(){var on=pastHero&&!formIn&&!svcIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  new IntersectionObserver(function(es){svcIn=es[0].isIntersecting;sync()}).observe(document.getElementById('services'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
 })();
 </script>
 </body>
