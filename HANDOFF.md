@@ -1,6 +1,6 @@
 # Outdoor Design Build — handoff at ~60% (calm-style revamp)
 
-**Live:** https://10elizabethbell.github.io/outdoorDesignBuild/ · **Repo:** https://github.com/10elizabethbell/outdoorDesignBuild · **Built:** 2026-10-17 from Muse brief (run 2026-10-17, Essex County Contractor Referrals post) · **Revamped:** 2026-10-19 to the calm band style · **Call Sheet:** site URL already on the sheet (script reported UNCHANGED)
+**Live:** https://10elizabethbell.github.io/outdoorDesignBuild/ · **Repo:** https://github.com/10elizabethbell/outdoorDesignBuild · **Built:** 2026-10-17 from Muse brief (run 2026-10-17, Essex County Contractor Referrals post) · **Revamped:** 2026-10-19 to the calm band style · **Call Sheet:** URL confirmed on the sheet at 21:44 (script: UNCHANGED); two re-runs after the final push got `LOCK BUSY: held by muse 2026-10-19 21:56`, but the URL doesn't change, so nothing is pending
 
 ## What changed in the revamp (2026-10-19)
 - **Look:** the spruce-green dusk world with cedar deck boards and blowing maple leaves is gone (it's in git history at `8cea9cb`). The page now uses the house calm band style from lpmr.co.uk: paper header, photo hero, navy services band, paper work band, deep-navy "How it works" with the faint line texture, paper form, navy close, deep-navy footer.
