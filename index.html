@@ -84,6 +84,9 @@ section{padding:64px 0}
 .btn-primary{background:var(--cedar);color:var(--ink);border-color:var(--cedar)}
 .btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,246,251,.7)}
 
+.btn,.linkbtn,.field label,.field legend{letter-spacing:.015em}
+.lede,.steps span,.area,.who{text-wrap:pretty}
+
 /* ---------- Header ---------- */
 .top{background:var(--paper);color:var(--ink)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
@@ -97,7 +100,7 @@ section{padding:64px 0}
 .hero{padding:0;position:relative;background-color:var(--navy);color:var(--on-dark);overflow:hidden;isolation:isolate}
 .hero-bg{position:absolute;inset:0;z-index:-1}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,36,59,.84) 0%,rgba(24,43,68,.76) 55%,rgba(20,36,59,.86) 100%)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,36,59,.8) 0%,rgba(24,43,68,.7) 55%,rgba(20,36,59,.82) 100%)}
 .hero-copy{position:relative;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:64px}
 .hero h1{color:#fff;font-size:clamp(42px,12vw,84px);line-height:1.02;max-width:11ch}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
@@ -105,7 +108,7 @@ section{padding:64px 0}
 .hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
 @keyframes letter-in{to{opacity:1;transform:none}}
 .hero h1.wait{visibility:hidden}
-.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark);max-width:30ch}
+.promise{text-wrap:pretty;font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark);max-width:30ch}
 .actions{display:grid;gap:12px;width:100%;margin-top:4px}
 
 /* ---------- Services: rows on navy, only the arrow reacts ---------- */
@@ -163,10 +166,11 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 form .btn-primary{width:100%}
 form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .after{font-size:15px;color:var(--soft)}
+.after a{color:var(--ink);font-weight:600;text-underline-offset:3px;display:inline-block;padding:12px 0;margin:-12px 0}
 .sent{display:grid;gap:10px;background:var(--field);border-radius:var(--r-field);padding:16px}
 .sent p{color:var(--ink)}
 .sent a{white-space:nowrap;font-weight:600}
-.sent pre{margin:0;font:15px/1.5 var(--text);white-space:pre-wrap;color:var(--body)}
+.sent pre{-webkit-user-select:all;user-select:all;margin:0;font:15px/1.5 var(--text);white-space:pre-wrap;color:var(--body)}
 .linkbtn{justify-self:start;min-height:44px;padding:0 18px;border-radius:var(--pill);border:2px solid var(--ink);background:transparent;color:var(--ink);font:400 16px/1 var(--display);cursor:pointer}
 @media (max-width:380px){.chips label{padding:0 14px}}
 @media (max-width:340px){.top .wrap{gap:8px}.tel{font-size:15px}.tel svg{display:none}}
@@ -179,14 +183,14 @@ form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2p
 
 /* ---------- Footer ---------- */
 footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
-footer .wrap{display:grid;gap:14px}
-.nw{white-space:nowrap}
+footer .wrap{display:grid;gap:6px;justify-items:start}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
 
 /* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
 .float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--cedar);color:var(--ink);box-shadow:0 10px 28px rgba(10,20,36,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
 .float.on{transform:none}
+html:not(.js) .float{display:none}
 .float svg{width:26px;height:26px}
 .float:focus-visible{outline:3px solid #fff;outline-offset:2px;border-radius:50%;box-shadow:0 0 0 8px var(--ink),0 10px 28px rgba(10,20,36,.3)}
 
@@ -203,7 +207,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   section{padding:96px 0}
   .hero-copy{padding-top:112px;padding-bottom:120px}
   .hero-bg img{object-position:50% 50%}
-  .hero-bg::after{background:linear-gradient(90deg,rgba(20,36,59,.9) 0%,rgba(20,36,59,.82) 45%,rgba(24,43,68,.55) 100%)}
+  .hero-bg::after{background:linear-gradient(90deg,rgba(20,36,59,.9) 0%,rgba(20,36,59,.8) 45%,rgba(24,43,68,.42) 100%)}
   .promise{max-width:none}
   .actions{grid-auto-flow:column;justify-content:start;width:auto}
   .actions .btn{min-width:240px}
@@ -211,9 +215,9 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 }
 @media (min-width:1024px){
   .rows{display:grid;grid-template-columns:1fr 1fr;column-gap:64px}
-  .rows li:nth-last-child(2):nth-child(odd){border-bottom:1px solid rgba(255,255,255,.12)}
-  .work .wrap{grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-  .work-head{display:grid;gap:28px}
+  .rows li:last-child:nth-child(odd){grid-column:1/-1}
+  .work .wrap{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:stretch}
+  .work-head{display:flex;flex-direction:column;justify-content:space-between;gap:28px}  /* heading level with the photo's top, Facebook link level with its bottom */
   .work .shot{grid-row:1;grid-column:2}
   .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
   .ask .head{position:sticky;top:40px}
@@ -232,7 +236,7 @@ input[type=text]:hover,textarea:hover{border-color:var(--focus)}
 .chips label:hover{border-color:var(--focus)}
 .chips input:checked+label:hover{outline:2px solid var(--focus);outline-offset:2px}
 form .btn-primary:hover,.linkbtn:hover{outline:2px solid var(--focus);outline-offset:2px}
-.sent a:hover{color:var(--navy)}
+.sent a:hover,.after a:hover{color:var(--navy)}
 .bigtel:hover{color:var(--cedar)}
 footer a:hover{color:var(--cedar)}
 }
@@ -261,7 +265,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </svg>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#" aria-label="Outdoor Design Build, back to top"><b>ODB</b><span>Outdoor Design Build</span></a>
+    <a class="brand" href="#" aria-label="ODB, Outdoor Design Build, back to top"><b>ODB</b><span>Outdoor Design Build</span></a>
     <a class="tel" href="tel:+12262608133"><svg aria-hidden="true"><use href="#i-phone"/></svg>226-260-8133</a>
   </div>
 </header>
@@ -273,7 +277,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <img src="img/hero-phone.webp" alt="" width="780" height="1114" fetchpriority="high" decoding="async">
   </picture>
   <div class="wrap hero-copy">
-    <p class="eyebrow">Free estimates</p>
+    <p class="eyebrow">Team ODB is on the job</p>
     <h1 id="h1">Windsor decks, done <span class="accent">before winter.</span></h1>
     <p class="promise">Custom designs, built like it's our own backyard.</p>
     <div class="actions">
@@ -301,7 +305,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="work-head">
       <h2 id="h-work" class="rise">Our work</h2>
       <a class="fb rise" href="https://www.facebook.com/ODB.windsor/" rel="noopener">
-        <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of our work.</span>
+        <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of our work on Facebook.</span>
       <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
     </a>
     </div>
@@ -315,7 +319,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <ol class="steps">
       <li class="rise"><div><b>Send us the idea.</b><span>A few lines and a photo of the yard is plenty.</span></div></li>
       <li class="rise"><div><b>Get a free estimate.</b><span>We go over the size, the wood and the budget with you.</span></div></li>
-      <li class="rise"><div><b>We build it.</b><span>Your design, built like it's going in our own backyard.</span></div></li>
+      <li class="rise"><div><b>We build it.</b><span>Your design, built the way we planned it together.</span></div></li>
     </ol>
   </div>
 </section>
@@ -327,7 +331,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <h2 id="h-ask">Tell us what you'd like built</h2>
       <p class="lede">Add a photo of the yard to the text before you send it.</p>
     </div>
-    <form id="quoteForm" class="rise" novalidate>
+    <form id="quoteForm" class="rise" aria-labelledby="h-ask" novalidate>
       <fieldset class="field" id="f-job" aria-describedby="e-job">
         <legend>What are we building?</legend>
         <div class="chips">
@@ -342,7 +346,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </fieldset>
       <div class="field" id="f-where">
         <label for="where">Where is the job?</label>
-        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="Town or street, e.g. South Windsor" aria-describedby="e-where">
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="e.g. South Windsor" aria-describedby="e-where">
         <p class="err" id="e-where" role="alert">Add the town or street so we know where to come.</p>
       </div>
       <fieldset class="field">
@@ -367,7 +371,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <pre id="msgOut"></pre>
         <button class="linkbtn" type="button" id="copyBtn">Copy message</button>
       </div>
-      <p class="after">Opens your messages with this written out.</p>
+      <p class="after">Opens your messages with this written out. Rather use Facebook? <a href="https://m.me/ODB.windsor" rel="noopener">Message us there</a>.</p>
     </form>
   </div>
 </section>
@@ -376,8 +380,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <div class="rise">
       <h2 id="h-close">Get it built <span class="accent">before the snow.</span></h2>
-      <p class="who">Outdoor Design Build. Team ODB is on the job.</p>
-      <p class="area">Based in Windsor, Ontario. Not sure we come out to your street? Call and ask.</p>
+      <p class="who">Outdoor Design Build, Windsor, Ontario.</p>
+      <p class="area">Not sure we come out to your street? Call and ask.</p>
     </div>
     <a class="bigtel rise" href="tel:+12262608133"><svg aria-hidden="true"><use href="#i-phone"/></svg>226-260-8133</a>
   </div>
@@ -386,7 +390,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <footer>
   <div class="wrap">
-    <span>Outdoor Design Build · Windsor, Ontario · <a class="nw" href="tel:+12262608133">226-260-8133</a></span>
+    <p>Outdoor Design Build · Windsor, Ontario</p>
+    <a href="tel:+12262608133">226-260-8133</a>
     <nav aria-label="Contact">
       <a href="https://www.facebook.com/ODB.windsor/" rel="noopener">Facebook</a>
     </nav>
@@ -478,7 +483,7 @@ document.documentElement.classList.add('js');
     var msg='Hi Team ODB!'+(name?' This is '+name+'.':'')+' I\'d like a free estimate for: '+jobs.join(', ')+'. The job is in '+where+'.';
     if(w)msg+=' When: '+w.value+'.';
     if(details)msg+=' '+details;
-    out.textContent=msg;
+    out.textContent=msg;document.getElementById('copyBtn').textContent='Copy message';
     location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
     // if no messages app opened (desktop, some in-app browsers), show the message to send another way
     setTimeout(function(){if(document.visibilityState==='visible')sent.hidden=false},900);
@@ -495,12 +500,14 @@ document.documentElement.classList.add('js');
 (function(){
   var fl=document.getElementById('float');if(!fl)return;
   if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
-  // each service row is already a way in, and the circle would sit on their arrows
-  var pastHero=false,formIn=false,svcIn=false;
-  function sync(){var on=pastHero&&!formIn&&!svcIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  // each service row is already a way in, and the circle would sit on their arrows (same for the Facebook row's arrow)
+  var pastHero=false,formIn=false,svcIn=false,fbIn=false,wide=matchMedia('(min-width:1024px)');
+  function sync(){var on=pastHero&&!formIn&&!svcIn&&!(fbIn&&!wide.matches);fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
   new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
-  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()}).observe(document.getElementById('quoteForm'));
   new IntersectionObserver(function(es){svcIn=es[0].isIntersecting;sync()}).observe(document.getElementById('services'));
+  // on phones the Facebook row is full width, so the circle would land on its arrow; on desktop it sits clear in the left column
+  new IntersectionObserver(function(es){fbIn=es[0].isIntersecting;sync()},{rootMargin:'-65% 0px 0px 0px'}).observe(document.querySelector('.work .fb')); // only while the row is low on screen, where the circle sits
   sync();
 })();
 

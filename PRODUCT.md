@@ -24,7 +24,7 @@ Their own words (Facebook page intro, seen 2026-10-17): "Outdoor Design Build st
 ## Brand commitments
 - Name: Outdoor Design Build; signs off as "Team ODB". Crew voice: "we / our".
 - Tone on social: casual and direct ("Team ODB is on the job").
-- No logo found; Facebook profile picture is a finished cedar deck. Colors: none published; taken from that deck (cedar, black balusters) — inferred.
+- No logo found; Facebook profile picture is a finished cedar deck. Colors: none published. Since the 2026-10-19 calm-style revamp: slate navy bands (from the deck's dark posts and black rails) with fresh cedar as the one accent — inferred.
 
 ## Evidence on hand
 - One real job photo: cedar deck, stairs, black metal balusters, pergola roof (Facebook profile picture, 1536px).
@@ -35,3 +35,4 @@ Their own words (Facebook page intro, seen 2026-10-17): "Outdoor Design Build st
 1. Phone first; the first screen shows what they build, where, and how to ask for an estimate.
 2. Only real facts; no invented services detail, reviews, prices or years.
 3. Speak as the crew about how they treat a homeowner's yard.
+4. House look: the calm band style (paper and navy bands, one cedar accent, Cal Sans headings), per Ellie's pitch-site rules of 2026-10-19.
