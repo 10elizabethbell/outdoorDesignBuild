@@ -1,260 +1,375 @@
 ---
 name: Outdoor Design Build
-description: A cedar deck at the edge of winter; maple leaves land on the boards and the visitor sweeps them off.
+description: Calm paper and slate-navy bands, their own cedar deck under a navy overlay, fresh cedar as the one warm fill.
 colors:
-  spruce: "#1b3a2f"
-  spruce-2: "#234a3c"
-  spruce-ink: "#0f2219"
-  footer: "#15302a"
-  siding: "#e8ece7"
-  siding-2: "#dde3dd"
-  cedar: "#c27a3f"
-  cedar-deep: "#9a5528"
-  cedar-hi: "#e8a167"
-  cedar-hover: "#d38a4d"
-  on-cedar: "#1d1109"
-  brand-sub: "#e3a46d"
-  maple: "#efb43c"
-  focus-light: "#946008"
-  rail: "#262b2e"
-  rule: "#c5cec7"
-  control-line: "#84928a"
-  on-dark: "#f3f1ea"
-  on-dark-soft: "#c9d6cd"
-  on-light-soft: "#46524b"
+  cedar: "#dc955a"
+  cedar-2: "#e8ab78"
+  cedar-ink: "#8f4a17"
+  navy: "#223d5e"
+  deep: "#14243b"
+  paper: "#f4f6fb"
+  card: "#ffffff"
+  field: "#e6ecf5"
+  ink: "#14243b"
+  body: "#2a3748"
+  soft: "#4a5668"
+  on-dark: "#f4f6fb"
+  on-dark-soft: "#c8d4e4"
+  focus: "#223d5e"
+  error: "#b3261e"
+  overlay-slate: "#182b44"
+  photo-shade: "#0e1a2c"
 typography:
   display:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(2.75rem, 12.4vw, 6rem)"
-    fontWeight: 900
-    lineHeight: 0.98
-    letterSpacing: "-0.025em"
-  headline:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(2rem, 8vw, 3.6rem)"
-    fontWeight: 900
-    lineHeight: 0.98
-    letterSpacing: "-0.01em"
-  title:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(1.25rem, 5.6vw, 1.6rem)"
-    fontWeight: 900
-    lineHeight: 0.98
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(42px, 12vw, 84px)"
+    fontWeight: 400
+    lineHeight: 1.02
     letterSpacing: "-0.005em"
-  body:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+  headline:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(30px, 7.6vw, 48px)"
+    fontWeight: 400
+    lineHeight: 1.08
+    letterSpacing: "-0.005em"
+  phone-display:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(30px, 9vw, 52px)"
+    fontWeight: 400
+    lineHeight: 1
+  title:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(21px, 5.6vw, 24px)"
+    fontWeight: 400
+    lineHeight: 1.2
+  wordmark:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "22px"
+    fontWeight: 400
+    lineHeight: 1
+    letterSpacing: "0.02em"
+  wordmark-wide:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "25px"
+    fontWeight: 400
+    lineHeight: 1
+    letterSpacing: "0.02em"
+  button:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "18px"
+    fontWeight: 400
+    lineHeight: 1
+    letterSpacing: "0.015em"
+  field-label:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
     fontSize: "17px"
     fontWeight: 400
-    lineHeight: 1.55
-  label:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "17px"
-    fontWeight: 800
+    lineHeight: 1.2
+    letterSpacing: "0.015em"
+  promise:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(17px, 4.7vw, 20px)"
+    fontWeight: 400
+    lineHeight: 1.5
+  lede:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(17px, 4.6vw, 19px)"
+    fontWeight: 400
+    lineHeight: 1.7
+  body:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "16px"
+    fontWeight: 400
+    lineHeight: 1.7
+  caption:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "15px"
+    fontWeight: 400
+    lineHeight: 1.5
+  small:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "14px"
+    fontWeight: 500
     lineHeight: 1
+    letterSpacing: "0.02em"
+  wordmark-sub:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "12px"
+    fontWeight: 600
+    lineHeight: 1
+    letterSpacing: "0.08em"
 rounded:
-  sm: "8px"
-  md: "10px"
-  photo: "14px"
+  card: "24px"
+  field: "10px"
   pill: "999px"
+  focus: "6px"
+  circle: "50%"
 spacing:
-  gutter-phone: "20px"
-  gutter-desk: "40px"
-  section-phone: "96px"
-  section-desk: "130px"
+  gutter: "20px"
+  gutter-wide: "40px"
+  section: "64px"
+  section-wide: "96px"
+  card-pad: "clamp(20px, 5vw, 32px)"
+  stack: "20px"
+  block: "28px"
+  column-gap: "64px"
 components:
-  button-fill:
+  button-primary:
     backgroundColor: "{colors.cedar}"
-    textColor: "{colors.on-cedar}"
-    rounded: "{rounded.md}"
-    padding: "0 24px"
+    textColor: "{colors.ink}"
+    typography: "{typography.button}"
+    rounded: "{rounded.pill}"
+    padding: "0 26px"
     height: "56px"
-  button-fill-hover:
-    backgroundColor: "{colors.cedar-hover}"
-  button-line:
-    backgroundColor: "rgba(27,58,47,.55)"
+  button-primary-hover:
+    backgroundColor: "{colors.cedar-2}"
+    textColor: "{colors.ink}"
+  button-ghost:
+    backgroundColor: "transparent"
     textColor: "{colors.on-dark}"
-    rounded: "{rounded.md}"
-    padding: "0 24px"
+    typography: "{typography.button}"
+    rounded: "{rounded.pill}"
+    padding: "0 26px"
     height: "56px"
-  button-line-hover:
-    textColor: "{colors.maple}"
-  service-row-arrow:
-    backgroundColor: "{colors.siding-2}"
-    textColor: "{colors.rail}"
-    rounded: "50%"
-    size: "44px"
-  service-row-arrow-hover:
-    backgroundColor: "{colors.cedar}"
-    textColor: "{colors.on-cedar}"
+  button-link:
+    backgroundColor: "transparent"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.pill}"
+    padding: "0 18px"
+    height: "44px"
+  input-field:
+    backgroundColor: "{colors.field}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body}"
+    rounded: "{rounded.field}"
+    padding: "13px 14px"
+    height: "52px"
   chip:
-    backgroundColor: "#ffffff"
-    textColor: "{colors.rail}"
+    backgroundColor: "{colors.field}"
+    textColor: "{colors.ink}"
     rounded: "{rounded.pill}"
     padding: "0 18px"
     height: "48px"
-  chip-checked:
-    backgroundColor: "{colors.spruce}"
+  chip-selected:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.card}"
+  form-card:
+    backgroundColor: "{colors.card}"
+    rounded: "{rounded.card}"
+    padding: "{spacing.card-pad}"
+  service-row:
     textColor: "{colors.on-dark}"
-  input:
-    backgroundColor: "#ffffff"
-    textColor: "{colors.rail}"
-    rounded: "{rounded.md}"
-    padding: "14px"
-    height: "54px"
-  proof-bar:
-    backgroundColor: "{colors.spruce}"
+    typography: "{typography.title}"
+    height: "68px"
+  row-arrow-hover:
+    backgroundColor: "{colors.cedar}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.circle}"
+    size: "44px"
+  facebook-row:
+    backgroundColor: "{colors.navy}"
     textColor: "{colors.on-dark}"
-    rounded: "{rounded.md}"
-    padding: "12px 18px"
-    height: "64px"
-  proof-bar-hover:
-    backgroundColor: "{colors.spruce-2}"
+    rounded: "{rounded.card}"
+    padding: "14px 16px 14px 22px"
+    height: "84px"
+  work-card:
+    backgroundColor: "{colors.deep}"
+    rounded: "{rounded.card}"
+  step-number:
+    backgroundColor: "{colors.cedar}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.circle}"
+    size: "48px"
+  float-text:
+    backgroundColor: "{colors.cedar}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.circle}"
+    size: "60px"
+  sent-panel:
+    backgroundColor: "{colors.field}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.field}"
+    padding: "16px"
 ---
 
 # Design System: Outdoor Design Build
 
 ## Overview
 
-**Creative North Star: "The Deck Before the Snow"**
+**Creative North Star: "The Finished Deck at Dusk"**
 
-The page is the client's own cedar deck at dusk in late October. Spruce green is the yard and the sky; fresh-stained cedar boards, drawn live on canvas with real grain, screws and butt joints, are the structural material that ties every section together; pale siding grey carries the reading sections. Maple and elm leaves blow in on a gusty breeze and settle on the boards, and a finger or mouse sweeps them off like a leaf blower. That living deck is the signature; everything else stays plain so it can carry the page.
+The page is a calm stack of full-bleed bands taken from one real job: off-white paper, the slate navy of the deck's dark posts, the deeper navy of its black rails, and fresh cedar from the boards as the only warm colour. Every section is a band, and light and dark alternate so a new section is obvious on a phone held in one hand inside Facebook's browser. The crew's own photo carries the first screen under a navy overlay; everything below it is quiet, soft-cornered and borderless.
 
-Density is low and phone-first: one column, big uppercase heads, 56px buttons, generous section padding. Type is a single heavy system sans. There is no card grid, no stock photo hero, no testimonial strip. Proof is the client's one real deck photo and their Facebook following.
+Density is low and the rhythm is generous: 64px bands on phones, 96px on desktop, a 20px phone gutter. Shapes are soft (24px cards, 10px fields, full pills) and nothing has a border except form controls on hover and focus. Depth is tonal: bands, a white form card on paper, a navy overlay on a photo. There is one shadow on the page, under the floating text circle.
+
+Motion is limited to three moments: the hero headline bounces in letter by letter, content below the first screen rises 12px as it arrives, and the floating text circle slides up once the hero is gone. All three switch off under reduced motion, and the page is fully visible without JavaScript.
 
 **Key Characteristics:**
-- Dark spruce ground alternating with light siding sections, joined by cedar plank seams.
-- Cedar is the action color; maple gold appears only as focus/hover feedback.
-- One family, weight 900, uppercase for every heading.
-- Live canvas leaves over cached board drawings in hero, seams, photo ledge and close.
-- Flat UI; the only real shadow sits under the photograph.
+- Full-bleed bands: paper, navy, paper, deep navy with a faint 135deg line texture, paper, navy, deep footer.
+- One warm accent, used as a fill; cedar text on light grounds always uses the darker Stained Cedar.
+- Cal Sans at weight 400 for every heading, button, label and phone number; the system stack for running text at 16/1.7.
+- Soft borderless geometry: 24px cards, 10px tinted fields, 999px pills, circles for arrows, step numbers and the text button.
+- Hover changes one small thing: the arrow circle on a row, the fill on a button, an outline on a control.
 
 ## Colors
 
-A two-ground palette (spruce dark, siding light) with one material accent (cedar) and one feedback accent (maple).
+Cool paper and two slate navies with a single fresh-cedar fill; the warmth is rationed to buttons, arrows, step numbers and the closing phrase of each dark-band heading.
 
 ### Primary
-- **Fresh-Stained Cedar** (cedar): fill of the primary button, the service-row arrow on hover, link underlines in the footer, scrollbar thumb, the base stain of every canvas board. `cedar-hover` is its hover; `cedar-deep` is the darker stain for any cedar line work on light.
-- **Cedar Light** (cedar-hi): cedar lifted for large text on spruce: the emphasized words of the hero headline and the step numerals.
+- **Fresh Cedar** (cedar): the one accent, always a fill. Primary buttons, the arrow circle on hover or focus, step numbers, the floating text circle, the eyebrow dot, focus outlines on dark grounds, icons and accent phrases on navy and deep bands, text selection. Text on it is Post Navy Ink.
+- **Sanded Cedar** (cedar-2): the hover fill for the primary button, nothing else.
+- **Stained Cedar** (cedar-ink): cedar as text or icon on light grounds (the header phone icon, accent phrases on paper, the header number on hover). Exists because Fresh Cedar on paper fails contrast.
 
 ### Secondary
-- **Maple Gold** (maple): focus rings and hover text on dark grounds only, plus text selection. Never a fill for content.
-- **Deep Maple** (focus-light): the same role on siding sections, deepened to hold contrast on light: focus outlines, chip/input hover and focus borders, the 3px focus halo on inputs.
+- **Rail Slate** (navy): the mid band (services, close), the hero's base colour under the photo, the Facebook row. Doubles as the focus colour on light grounds.
+- **Post Navy** (deep): the darkest band (how it works, footer), always carrying the line texture; also the placeholder fill behind the work photo.
 
 ### Neutral
-- **Evergreen Dusk** (spruce): page ground, dark sections, checked chips, the proof bar. `spruce-2` is its hover/raised step, `spruce-ink` is text on maple, `footer` is the deepest band.
-- **Pale Siding** (siding / siding-2): light reading sections; `siding-2` is the resting arrow circle and inset fills.
-- **Black Baluster** (rail): body ink on siding.
-- **Soft Light Ink** (on-dark, on-dark-soft): primary and secondary text on spruce.
-- **Muted Ink** (on-light-soft): secondary text on siding (optional tags, form notes).
-- **Rule Grey** (rule): hairline dividers between service rows. **Control Line** (control-line): 2px borders of chips and inputs (3:1 on white).
+- **Morning Paper** (paper): page ground, header, light bands, theme colour.
+- **Card White** (card): the quote form card; the hero and photo-card headline white.
+- **Field Mist** (field): input, textarea and chip fills on the white card, and the post-submit panel. Distinct from paper so fields read against white.
+- **Post Navy Ink** (ink): headings on light, text on cedar, selected-chip fill, link-button stroke.
+- **Slate Body** (body): running text on light.
+- **Weathered Slate** (soft): ledes, placeholders, the wordmark subline, small notes.
+- **Paper on Dark** (on-dark): headings, rows and buttons on navy and deep.
+- **Dusk Blue Text** (on-dark-soft): running text on navy and deep bands.
+- **Signal Red** (error): inline error sentences (15px) and the invalid field border. The only red.
+- **Overlay Slate** (overlay-slate): never a solid; the lighter middle stop of the hero overlay (70% on phones, 42% at the right edge from 760px), letting the deck show through.
+- **Photo Shade** (photo-shade): never a solid; the 78% foot of the work-card gradient under the white caption.
 
 ### Named Rules
-**The Maple Means Focus Rule.** Maple gold (and Deep Maple on light) signals "you are here / you can press this". It is never decoration, never a heading color, never a resting fill.
+**The Cedar Is a Fill Rule.** Fresh Cedar never sits as text on paper or white; on light grounds cedar-coloured text is Stained Cedar, and text on a cedar fill is Post Navy Ink.
 
-**The Two Focus Colors Rule.** Default `:focus-visible` is a 3px maple outline at 3px offset; inside any `.light` section it switches to focus-light. Any new light surface must carry the `light` class so focus stays visible.
+**The Last Phrase Rule.** On navy and deep bands (and the hero) the closing phrase of a heading may be set in Fresh Cedar ("before winter.", "build.", "works.", "before the snow."). On paper the heading stays ink.
+
+**The Texture Belongs to Deep Rule.** The 135deg line texture (`repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)`) appears on the deep band and the footer only, and stays at 3.5% white so it never reads as lines through text.
 
 ## Typography
 
-**Display Font:** system UI sans (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`)
-**Body Font:** same stack
+**Display Font:** Cal Sans (with Avenir Next, Segoe UI, system-ui)
+**Body Font:** system stack (-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial)
 
-**Character:** One family doing everything, carried by weight: 900 uppercase for heads like painted job-site lettering, 800 for buttons and labels, 400 body. Fast to load inside Facebook's in-app browser.
+**Character:** One geometric display face at a single weight does all the talking (headings, buttons, labels, phone numbers, the ODB wordmark) while the native system face carries reading text, so the page loads one webfont and still has a voice.
 
 ### Hierarchy
-- **Display** (900, clamp(2.75rem, 12.4vw, 6rem), 0.98, -0.025em, uppercase): hero headline only; max 760px wide; soft dark text-shadow for legibility over leaves. Closing headline uses clamp(2.2rem, 10vw, 4.6rem).
-- **Headline** (900, clamp(2rem, 8vw, 3.6rem), 0.98, uppercase, balanced wrap): section titles.
-- **Title** (900, clamp(1.25rem, 5.6vw, 1.6rem), uppercase): service row labels; step titles at 1.25rem.
-- **Body** (400, 17px phone / 18px at 900px+, 1.55): paragraphs; promise lines capped near 32-34ch.
-- **Label** (800, 17px): buttons, form legends and labels, phone number (tabular numerals). Small notes are 15px.
+- **Display** (400, clamp 42-84px, 1.02): the hero headline only, white, max 11ch, letter-by-letter bounce-in.
+- **Headline** (400, clamp 30-48px, 1.08): section headings, balanced wrapping.
+- **Phone Display** (400, clamp 30-52px, 1): the big tap-to-call number in the closing band.
+- **Title** (400, clamp 21-24px, 1.2): service rows; the same register at 20-23px for the Facebook row, 21px (22px desktop) for step titles, 22px/1.15 for the photo-card caption.
+- **Wordmark** (400, 22px; Wordmark Wide 25px from 760px; 0.02em): "ODB", over a **Wordmark Sub** line (system 600, 12px, 0.08em, uppercase) reading "Outdoor Design Build".
+- **Button** (400, 18px, 0.015em): pill buttons; 16px on the link button, 17px (20px desktop) on the header number.
+- **Field Label** (400, 17px, 1.2): form labels and legends.
+- **Promise** (system, clamp 17-20px, 1.5): the one line under the hero H1, max 30ch on phones.
+- **Lede** (system, clamp 17-19px): text under a section heading, max 38ch.
+- **Body** (system 400, 16px, 1.7): running text; inputs and chips are 16px so iOS does not zoom.
+- **Caption** (system, 15px): error sentences, the note under the submit button, the composed message.
+- **Small** (system 500, 14px, 0.02em): "(optional)" notes beside labels, and the eyebrow pill text.
 
 ### Named Rules
-**The Plain Numeral Rule.** Steps are numbered with a bare cedar-hi numeral (900, 52px) from a CSS counter. No circles, badges or "Step 01" labels.
+**The One Weight Rule.** Cal Sans is only ever set at 400. Hierarchy comes from size and colour, never from weight.
+
+**The Bounce Is for the H1 Rule.** Only the hero headline animates letter by letter; no other heading gets a letter effect.
 
 ## Layout
 
-Single centered container (max 1180px; 20px gutters, 40px at 900px+). Sections pad 96px/88px on phones and 130px/120px at 900px+. Breakpoints: 400px (buttons stop wrapping), 640px (hero buttons go side by side), 900px (two-column services/work grid with 72px gap, three-column steps, larger header), 1024px (form goes two columns; chip groups, notes and submit span full width). The hero is at least 640px and up to 100svh (cap 940px); copy sits top-left, the deck fills the lower part from just below the buttons.
+Single column on phones with a 20px gutter (40px from 760px), content capped at 1160px. Bands pad 64px vertically on phones and 96px from 760px; the hero pads 56px/64px, then 112px/120px. Inside bands, a heading block sits 28-36px above its list, and grids use 28px gaps on phones and 64px column gaps on desktop.
 
-The header is absolute over the hero, not sticky. Sections alternate dark / light / dark / light / dark close, and every boundary is a cedar plank seam overlapping both sections by half its height (96px tall, 120px at 900px+).
+- **Header:** paper strip, 64px tall (76px desktop), wordmark left and tap-to-call number right, respecting the safe-area inset.
+- **Hero:** photo with `object-fit: cover` (focus 50% 60% on phones), copy stacked on a 20px grid; buttons stack full width on phones and sit side by side at 240px minimum from 760px.
+- **Services:** one column of rows; two columns with a 64px gap from 1024px, an odd last row spanning both.
+- **Work:** heading, square photo, then the Facebook row on phones; from 1024px a 0.8fr / 1.2fr split with the heading level with the photo's top and the Facebook row (max 520px) level with its bottom.
+- **How it works:** stacked steps, three columns with 40px gaps from 1024px.
+- **Ask:** heading block above the form on phones; from 1024px a 1fr / 1.2fr split with the heading block sticky at 40px. The form caps at 600px.
+- **Close:** heading and lines, then the big number; from 1024px the number aligns to the bottom right.
+- **Footer:** stacked lines with a 6px gap, extra bottom padding (96px plus safe area) so the floating circle never covers it.
+
+Breakpoints: 340px (header tightens, phone icon drops), 380px (chips narrow), 760px (desktop rhythm), 1024px (two-column layouts), plus a hover-capable media query that gates every hover style.
 
 ## Elevation & Depth
 
-Flat UI. Depth comes from the canvas material (board gradients, dusk light, contact shadow where the deck meets the yard, small drop shadows under resting leaves) and from radial gradients on the hero and close grounds. The only box shadow is under the work photo, which sits on a cedar ledge like an object.
+Flat and tonal. Depth comes from band changes, the white form card on paper, and overlays on photographs. The single shadow belongs to the one fixed element.
 
 ### Shadow Vocabulary
-- **Photo lift** (`box-shadow: 0 22px 44px -18px rgba(30,40,34,.55), 0 4px 12px rgba(30,40,34,.18)`): the work photograph only.
-- **Input focus halo** (`box-shadow: 0 0 0 3px rgba(148,96,8,.25)`): text fields on focus, with focus-light border.
-- **Headline legibility shadow** (`text-shadow: 0 2px 24px rgba(15,34,25,.75)`): headlines and promise text sitting over leaf fields.
+- **Float lift** (`box-shadow: 0 10px 28px rgba(10,20,36,.3)`): the floating text circle only, so it reads above any band it crosses.
+
+### Overlays
+- **Hero overlay, phones** (`linear-gradient(180deg, rgba(20,36,59,.8) 0%, rgba(24,43,68,.7) 55%, rgba(20,36,59,.82) 100%)`): darkens the whole portrait crop so white text holds 4.5:1 everywhere.
+- **Hero overlay, 760px up** (`linear-gradient(90deg, rgba(20,36,59,.9) 0%, rgba(20,36,59,.8) 45%, rgba(24,43,68,.42) 100%)`): heavy under the left-hand copy, opening up to show the deck on the right.
+- **Photo-card foot** (`linear-gradient(180deg, transparent, rgba(14,26,44,.78))` over the bottom 40%): lets the white caption sit on the photo.
 
 ### Named Rules
-**The Only the Photo Floats Rule.** No card or button shadows. If something needs separation, use a ground change or a 1px rule.
+**The One Shadow Rule.** Only the floating text circle casts a shadow. Cards, buttons, rows and the header stay flat; hover never adds a shadow.
 
 ## Shapes
 
-Gently rounded rectangles (10px) for buttons, inputs, proof bar and result panel; 8px for small secondary buttons and inset code blocks; 14px for the photo; full pills for chips; perfect circles for the arrow and Facebook badge. Rows are open, divided by hairline rules, never boxed. Borders are 2px on interactive controls, 1px on dividers.
+Soft and borderless. Containers round to 24px (form card, work photo, Facebook row), fields to 10px (inputs, textarea, sent panel), and every button, chip and eyebrow is a full pill (999px). Arrow buttons, step numbers and the floating text button are circles. Focus outlines round at 6px. The only lines are hairlines between service rows (rgba(255,255,255,.12)) and the 2px control strokes that appear on hover, focus and error.
+
+Icons are inline SVG line icons (arrow, phone, chat) at a 2.2-2.6 stroke with round caps, plus the filled Facebook and Messenger marks; every icon draws in `currentColor` and takes its colour from its context (cedar on dark, Stained Cedar beside the header number, ink on cedar fills).
 
 ## Components
 
-### Header
-Absolute over the hero. Left: SVG plank mark (three cedar boards with gaps, screws and grain) plus "OUTDOOR DESIGN BUILD" (900, uppercase) with "Windsor, Ontario" beneath in brand-sub (hidden under 430px). Right: the phone number as a tel link (800, tabular numerals), maple on hover. No nav menu.
-
 ### Buttons
-- **Shape:** 10px radius, min-height 56px, 2px cedar border, 800 17px label, optional 20px leading icon.
-- **Fill (primary):** cedar fill, on-cedar text; hover to cedar-hover. Active nudges down 1px (off for reduced motion).
-- **Line (secondary, dark grounds):** translucent spruce fill, on-dark text, cedar border; hover turns border and text maple.
-- **Hero pair:** fill "Get a free estimate" + line "Message us on Facebook", stacked on phones, side by side at 640px+, max 580px together.
-- **Small secondary** (Copy message): 8px radius, 2px control-line border, 44px tall; focus-light border on hover/focus.
-
-### Service Rows
-A ruled list of uppercase title links, each 68px tall with a 44px arrow circle at the right. On hover/focus only the arrow circle changes (siding-2 to cedar fill); the row gets no background, outline or shadow, and the focus ring draws around the arrow. Clicking jumps to the form and pre-ticks the matching chip with a brief Deep Maple pulse.
-
-### Proof Bar (Facebook)
-Spruce bar under the photo: Facebook-blue round badge, an 800 line with a 500 subline in on-dark-soft, trailing arrow that nudges right and turns maple on hover; bar shifts to spruce-2.
-
-### Steps
-Three items, numeral column 52px + text; one column on phones, three at 900px+. Sit on spruce.
+Rounded, roomy and quiet.
+- **Shape:** full pill, 56px tall, 26px side padding, Cal Sans 18px, 20px icons with a 10px gap.
+- **Primary:** Fresh Cedar fill, ink text ("Get a free estimate", "Text this to Team ODB"). Full width inside the form.
+- **Ghost:** transparent with a 2px stroke of paper at 70% and on-dark text; used on the hero beside the primary, carrying the Messenger mark.
+- **Hover / Focus:** primary shifts to Sanded Cedar; ghost firms its stroke to white over a 10% white wash; the form's submit and link buttons gain a 2px navy outline offset 2px. Press scales to 0.98 over 0.12s. Colour transitions run 0.2s.
+- **Link button:** 44px pill with a 2px ink stroke, Cal Sans 16px ("Copy message").
 
 ### Chips
-Pill, 48px tall, white with 2px control-line border, 700 weight. Hover border focus-light; checked becomes spruce fill with on-dark text. Hidden native checkbox/radio keeps keyboard semantics; focus ring is a 3px focus-light outline on the pill.
+- **Style:** Field Mist pill, 48px tall, 18px side padding (14px under 380px), system 16px ink text, 2px transparent stroke.
+- **State:** hover draws the navy stroke; checked fills ink with white text, and checkboxes add a drawn tick; keyboard focus is a 3px navy outline offset 3px so it shows on the ink fill.
+
+### Cards / Containers
+- **Form card:** white, 24px radius, clamp(20px, 5vw, 32px) padding, 20px gap between fields, no border, no shadow.
+- **Work photo card:** square photo, 24px radius, deep-navy placeholder, bottom gradient and a white Cal Sans 22px caption 20px in from the edges. No caption below the photo.
+- **Facebook row:** navy pill-cornered bar (24px radius), 84px tall, the cedar Facebook mark at 30px, the line "Click to see more of our work on Facebook." and an arrow circle; only the arrow reacts.
+- **Sent panel:** Field Mist, 10px radius, 16px padding; holds the composed message and the Copy button.
 
 ### Inputs / Fields
-- **Style:** white, 2px control-line border, 10px radius, 16px text (prevents iOS zoom), 54px min height; textarea 110px, vertical resize.
-- **Focus:** border focus-light plus the 3px focus halo; no outline.
-- **Error:** border #b3261e, message 700 15px in #9b2018 below, announced politely.
-- **Submit:** full-width fill button (max 420px); hover/focus adds a 3px focus-light outline.
+- **Style:** Field Mist fill, 2px transparent stroke, 10px radius, 52px minimum (textarea 120px), 13px/14px padding, system 16px ink, soft placeholder, navy caret.
+- **Focus / Hover:** the stroke turns navy; no glow.
+- **Error:** the stroke turns Signal Red and stays red while focused; the fix is written as a plain 15px sentence under the field.
 
-### Close
-Spruce section with radial glow, closing headline, one line, a single line button to Messenger, and its own leaf field with a deck along the bottom 210px.
+### Navigation
+A slim paper header: the ODB wordmark (with its uppercase subline) left, the tap-to-call number right in Cal Sans with a Stained Cedar phone icon. No menu. The footer repeats name, area, phone and Facebook as 44px tap targets on the deep band, turning cedar on hover.
 
-### Footer
-Deepest green band, 15px on-dark-soft: name (900, uppercase), phone, Facebook, town. Links are underlined in cedar, maple on hover, 44px tap height.
+### Service Rows
+Each row is the whole link: Cal Sans title left, a 44px arrow circle (10% white) right, hairlines between, 68px minimum. On hover or focus only the arrow changes, filling with Fresh Cedar and turning its arrow ink; focus adds a 3px cedar ring around the arrow. Tapping a row pre-selects the matching chip in the form.
 
-### Leaf Field (Signature Component)
-One engine (`Field`) runs every instance; edit tunables only in the `TUNE` object at the top of the script.
-- **Two canvases per field.** `drawDeck` paints boards once per size onto an under-canvas inserted beneath the leaf canvas (six-tone cedar stain with board-to-board shift, wavy grain, cathedral arches, knots, screw pairs over joists, staggered butt joints, dusk light and a contact shadow). Each frame clears and redraws only the leaves on the top canvas. Resize redraws only when width/height actually change, so mobile address-bar resizes keep the visitor's sweep.
-- **Instances.** Hero (deck starts below the copy, 34/84 leaves phone/desk); close (deck below the button, 26/60); plank seams between sections and the photo ledge (a narrow band of 14-18px boards with a dark gap line, 7/14 leaves, leaves 0.82 size). Leaves are 17px phone / 20px desk.
-- **Leaves.** Maple and elm sprites prerendered front and back in seven late-October reds, rusts and browns; they flip, sway, settle with a slide and ease flat, cast a small shadow when resting, and gusts occasionally lift them.
-- **Text avoidance.** Flying leaves fade near the field's top edge and fade out over the hero and close copy blocks (headline, promise, buttons) so no leaf crosses text.
-- **Pointer blower.** Mouse or finger within 90/130px pushes leaves away with a share of pointer velocity. The hero deck area takes `touch-action:none` so drags work in any direction there; the text area and seams still scroll. Swept leaves return after 4-10s.
-- **Reduced motion.** Every leaf is placed resting on the boards and one still frame is drawn; no loop, no pointer.
-- **Performance.** DPR capped at 1.5; one shared rAF loop that sleeps when no field is intersecting the viewport or the tab is hidden.
+### Numbered Steps
+Three steps, each a 48px Fresh Cedar circle with an ink Cal Sans 20px numeral beside a Cal Sans title and a one-line system-text explanation, on the deep band.
+
+### Floating Text Circle
+A 60px Fresh Cedar circle, ink chat icon at 26px, fixed 16px from the bottom-right safe-area corner, opening a pre-written text. It slides up from 120px below (0.35s, cubic-bezier(.2,.8,.2,1)) once the hero leaves, and hides over the service rows, while the form is on screen, and on phones while the Facebook row sits low on screen. When hidden it is untabbable and aria-hidden. Focus: a 3px white outline plus an 8px ink ring. It is absent without JavaScript.
+
+### Hero Headline Bounce-In
+After Cal Sans loads (900ms limit, else the plain heading shows), the H1 is split into letters inside no-wrap word wrappers, keeping its measured line breaks. Each letter travels from 50px right at opacity 0 to rest over 1s on cubic-bezier(.34,1.56,.64,1), 20ms apart. The H1 carries an aria-label meanwhile; when the last letter lands the original markup returns.
+
+### Fade-Up
+Elements that start below the first screen rise 12px and fade in over 0.4s ease-out as they enter (8% bottom margin). Everything already on screen, everything without JavaScript, and everything under reduced motion is visible at rest.
+
+### Carried Exception: Eyebrow Pills
+The build carries two eyebrow pills ("Team ODB is on the job" above the hero H1, "Free estimate" above the form heading): a `<p>` pill with a 7px cedar dot, 14px system 500 text, 9px/14px padding, an ink-at-6% fill on paper and a white-at-12% fill on dark. This is the owner's house-style call, recorded so the shipped values are documented; it is not a pattern for new surfaces. See Don'ts.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** join every dark/light section boundary with a cedar plank seam field.
-- **Do** keep cedar as the only action fill and maple (focus-light on siding) as the only hover/focus accent.
-- **Do** set every heading 900 uppercase in the system stack, balanced wrap.
-- **Do** keep tap targets at least 44px (buttons 56px, chips 48px, inputs 54px).
-- **Do** add any new text block over a leaf field to that field's avoid list and give it the legibility text-shadow.
-- **Do** keep the phone number top-right on the first screen and show it at most once per screen.
-- **Do** make everything that looks pressable actually pressable (rows, chips, arrow circles, proof bar all link or toggle).
+- **Do** alternate full-bleed bands so each section change is visible, with the line texture only on the deep band and footer.
+- **Do** use Fresh Cedar as a fill with ink text on it, and Stained Cedar whenever cedar has to be text or an icon on paper or white.
+- **Do** set every heading, button, label and phone number in Cal Sans at 400, and running text in the system stack at 16px/1.7.
+- **Do** keep fields and chips on Field Mist inside the white card, with a navy 2px stroke on hover and focus and Signal Red on error.
+- **Do** keep tap targets at 44px or more (rows 68px, buttons 56px, chips 48px).
+- **Do** gate hover styles behind a hover-capable pointer query, and switch off the bounce-in, fade-up, float slide and smooth scroll under reduced motion.
+- **Do** draw icons in currentColor so they take the band's colour.
+- **Do** let the photo carry the hero under a navy overlay dark enough for 4.5:1 white text.
 
 ### Don't:
-- **Don't** make the header sticky or add a sticky/floating call bar (client house rule).
-- **Don't** repeat the phone number elsewhere on the first screen, or place it anywhere but top-right there.
-- **Don't** add email links (none exists; if the owner supplies one, it goes in the footer only).
-- **Don't** style non-interactive things to look clickable: no arrow circles, pills, underlines or button shapes on static content.
-- **Don't** change the service row background or draw a box on hover; only the arrow circle responds.
-- **Don't** add shadows to cards or buttons, or wrap rows and steps in cards.
-- **Don't** add eyebrows, kickers or badges above headings, or step-number chips.
-- **Don't** redraw the boards every frame or run the loop off-screen.
+- **Don't** put Fresh Cedar text on paper or white, or white text on a cedar fill.
+- **Don't** add shadows to cards, rows, buttons or the header; the floating circle owns the only shadow.
+- **Don't** change a whole service row or the Facebook row on hover; only the arrow circle fills.
+- **Don't** animate any heading other than the hero H1, and never leave content at opacity 0 when JavaScript is off or motion is reduced.
+- **Don't** raise the line texture above 3.5% white or put it on paper or navy bands.
+- **Don't** add borders to cards or fields at rest.
+- **Don't** add new eyebrow pills; the two in the build are a carried owner exception, not a heading treatment to repeat.
+- **Don't** stretch or distort photos; crop with object-fit cover.

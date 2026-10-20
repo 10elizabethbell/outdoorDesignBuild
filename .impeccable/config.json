@@ -4,13 +4,22 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "repeating-gradient-stripes",
+        "rule": "repeating-stripes-gradient",
         "value": "*",
         "files": [
           "index.html"
         ],
         "createdAt": "2026-10-20T01:42:26.975Z",
         "reason": "pitch-site calm band style (calm-photo-style.md item 2, Ellie 2026-10-19): faint 135deg line texture on deep bands is the house look"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T01:57:13.841Z",
+        "reason": "detector misses the clamp() display sizes (H1 42-84px, H2 30-48px); small sizes are the 15/16/17px body, caption and label steps recorded in DESIGN.md"
       }
     ]
   }

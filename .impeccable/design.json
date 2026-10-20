@@ -1,523 +1,623 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T01:56:24.037403+00:00",
+  "generatedAt": "2026-10-20T01:56:50.638546+00:00",
   "title": "Design System: Outdoor Design Build",
   "extensions": {
     "colorMeta": {
-      "spruce": {
-        "role": "neutral",
-        "displayName": "Evergreen Dusk",
-        "canonical": "#1b3a2f",
-        "tonalRamp": [
-          "#132a22",
-          "#275343",
-          "#3a7c65",
-          "#4da686",
-          "#72bda2",
-          "#9bd0be",
-          "#c4e4d9",
-          "#eef7f4"
-        ]
-      },
-      "spruce-2": {
-        "role": "neutral",
-        "displayName": "Evergreen Raised",
-        "canonical": "#234a3c",
-        "tonalRamp": [
-          "#142a22",
-          "#275343",
-          "#3a7c64",
-          "#4ea586",
-          "#73bda2",
-          "#9cd0bd",
-          "#c5e3d8",
-          "#eef7f4"
-        ]
-      },
-      "spruce-ink": {
-        "role": "neutral",
-        "displayName": "Spruce Ink",
-        "canonical": "#0f2219",
-        "tonalRamp": [
-          "#132a1f",
-          "#25543e",
-          "#387e5d",
-          "#4aa87c",
-          "#6fc09a",
-          "#99d2b7",
-          "#c3e5d5",
-          "#edf7f3"
-        ]
-      },
-      "footer": {
-        "role": "neutral",
-        "displayName": "Deep Spruce Band",
-        "canonical": "#15302a",
-        "tonalRamp": [
-          "#132b25",
-          "#25554a",
-          "#377f6f",
-          "#4aa994",
-          "#6fc0ae",
-          "#99d2c6",
-          "#c3e5dd",
-          "#edf7f5"
-        ]
-      },
-      "siding": {
-        "role": "neutral",
-        "displayName": "Pale Siding",
-        "canonical": "#e8ece7",
-        "tonalRamp": [
-          "#1c221b",
-          "#394436",
-          "#556650",
-          "#71876b",
-          "#90a48c",
-          "#b1bead",
-          "#d1d9cf",
-          "#f1f4f1"
-        ]
-      },
-      "siding-2": {
-        "role": "neutral",
-        "displayName": "Siding Shade",
-        "canonical": "#dde3dd",
-        "tonalRamp": [
-          "#1c221c",
-          "#374337",
-          "#526452",
-          "#6e856e",
-          "#8ea28e",
-          "#afbdaf",
-          "#d0d8d0",
-          "#f1f3f1"
-        ]
-      },
       "cedar": {
         "role": "primary",
-        "displayName": "Fresh-Stained Cedar",
-        "canonical": "#c27a3f",
+        "displayName": "Fresh Cedar",
+        "canonical": "#dc955a",
         "tonalRamp": [
-          "#2e1d0f",
-          "#5c3a1d",
-          "#8a562c",
-          "#b8733a",
-          "#cd9262",
-          "#dcb290",
-          "#ead2be",
-          "#f9f2ec"
+          "#120903",
+          "#332010",
+          "#593a21",
+          "#815632",
+          "#ac7445",
+          "#d99359",
+          "#f9ba89",
+          "#ffe7cd"
         ]
       },
-      "cedar-deep": {
+      "cedar-2": {
         "role": "primary",
-        "displayName": "Deep Cedar Stain",
-        "canonical": "#9a5528",
+        "displayName": "Sanded Cedar",
+        "canonical": "#e8ab78",
         "tonalRamp": [
-          "#311b0d",
-          "#613519",
-          "#915026",
-          "#c16a32",
-          "#d48b5b",
-          "#e1ad8b",
-          "#edcfbb",
-          "#faf1eb"
+          "#100a06",
+          "#2f2218",
+          "#533d2b",
+          "#7a5a3f",
+          "#a37854",
+          "#ce986b",
+          "#f5bc8c",
+          "#ffe7ca"
         ]
       },
-      "cedar-hi": {
+      "cedar-ink": {
         "role": "primary",
-        "displayName": "Cedar Light",
-        "canonical": "#e8a167",
+        "displayName": "Stained Cedar",
+        "canonical": "#8f4a17",
         "tonalRamp": [
-          "#351c08",
-          "#6a3810",
-          "#9e5418",
-          "#d37020",
-          "#e4904b",
-          "#ecb080",
-          "#f4d1b4",
-          "#fcf1e9"
+          "#1d0200",
+          "#411700",
+          "#683003",
+          "#914c1b",
+          "#ae724c",
+          "#cb987a",
+          "#e8c0a8",
+          "#ffe8d7"
         ]
       },
-      "cedar-hover": {
-        "role": "primary",
-        "displayName": "Cedar Hover",
-        "canonical": "#d38a4d",
-        "tonalRamp": [
-          "#311d0c",
-          "#623a18",
-          "#925624",
-          "#c37330",
-          "#d69259",
-          "#e2b28a",
-          "#eed2ba",
-          "#faf2eb"
-        ]
-      },
-      "on-cedar": {
-        "role": "primary",
-        "displayName": "Ink on Cedar",
-        "canonical": "#1d1109",
-        "tonalRamp": [
-          "#2f1b0e",
-          "#5d361d",
-          "#8b512b",
-          "#b96d39",
-          "#ce8d61",
-          "#dcae8f",
-          "#ebcfbd",
-          "#f9f1ec"
-        ]
-      },
-      "brand-sub": {
-        "role": "primary",
-        "displayName": "Brand Subline Cedar",
-        "canonical": "#e3a46d",
-        "tonalRamp": [
-          "#331d0a",
-          "#663a14",
-          "#99571d",
-          "#cc7427",
-          "#de9351",
-          "#e7b284",
-          "#f1d2b7",
-          "#fbf2ea"
-        ]
-      },
-      "maple": {
+      "navy": {
         "role": "secondary",
-        "displayName": "Maple Gold",
-        "canonical": "#efb43c",
+        "displayName": "Rail Slate",
+        "canonical": "#223d5e",
         "tonalRamp": [
-          "#392705",
-          "#704e09",
-          "#a8750e",
-          "#e09c12",
-          "#efb540",
-          "#f4cb78",
-          "#f8e0b0",
-          "#fdf6e7"
+          "#000b1e",
+          "#0f2641",
+          "#294364",
+          "#4c6380",
+          "#71849c",
+          "#98a7ba",
+          "#c0cad8",
+          "#e9eff6"
         ]
       },
-      "focus-light": {
+      "deep": {
         "role": "secondary",
-        "displayName": "Deep Maple",
-        "canonical": "#946008",
+        "displayName": "Post Navy",
+        "canonical": "#14243b",
         "tonalRamp": [
-          "#3a2603",
-          "#734b06",
-          "#ad7009",
-          "#e6950c",
-          "#f4af3b",
-          "#f7c774",
-          "#fbdead",
-          "#fef5e7"
+          "#020b1c",
+          "#15253c",
+          "#344358",
+          "#566274",
+          "#798392",
+          "#9ea6b0",
+          "#c5c9cf",
+          "#ebeff3"
         ]
       },
-      "rail": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Black Baluster",
-        "canonical": "#262b2e",
+        "displayName": "Morning Paper",
+        "canonical": "#f4f6fb",
         "tonalRamp": [
-          "#1c1f22",
-          "#373e43",
-          "#525d64",
-          "#6e7c85",
-          "#8e9aa1",
-          "#afb8bd",
-          "#d0d5d8",
-          "#f1f3f3"
+          "#0b0b0c",
+          "#252525",
+          "#424243",
+          "#616162",
+          "#818284",
+          "#a4a5a8",
+          "#c7c9cd",
+          "#eceef3"
         ]
       },
-      "rule": {
+      "card": {
         "role": "neutral",
-        "displayName": "Rule Grey",
-        "canonical": "#c5cec7",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
         "tonalRamp": [
-          "#1c211d",
-          "#38423a",
-          "#536357",
-          "#6f8474",
-          "#8fa093",
-          "#b0bcb2",
-          "#d0d8d2",
-          "#f1f3f2"
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
         ]
       },
-      "control-line": {
+      "field": {
         "role": "neutral",
-        "displayName": "Control Line",
-        "canonical": "#84928a",
+        "displayName": "Field Mist",
+        "canonical": "#e6ecf5",
         "tonalRamp": [
-          "#1d201e",
-          "#39413c",
-          "#56615a",
-          "#728178",
-          "#919e97",
-          "#b1bab5",
-          "#d1d7d4",
-          "#f1f3f2"
+          "#0b0b0c",
+          "#242526",
+          "#414243",
+          "#5f6164",
+          "#808287",
+          "#a1a5ab",
+          "#c5c9d1",
+          "#e9eff8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Post Navy Ink",
+        "canonical": "#14243b",
+        "tonalRamp": [
+          "#020b1c",
+          "#15253c",
+          "#344358",
+          "#566274",
+          "#798392",
+          "#9ea6b0",
+          "#c5c9cf",
+          "#ebeff3"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Slate Body",
+        "canonical": "#2a3748",
+        "tonalRamp": [
+          "#050b16",
+          "#1b2634",
+          "#364353",
+          "#576271",
+          "#7a838f",
+          "#9fa6af",
+          "#c5cad0",
+          "#eceff2"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Weathered Slate",
+        "canonical": "#4a5668",
+        "tonalRamp": [
+          "#060b13",
+          "#1e2531",
+          "#384352",
+          "#566273",
+          "#798392",
+          "#9da6b2",
+          "#c3cad3",
+          "#eaeff5"
         ]
       },
       "on-dark": {
         "role": "neutral",
-        "displayName": "Soft Light Ink",
-        "canonical": "#f3f1ea",
+        "displayName": "Paper on Dark",
+        "canonical": "#f4f6fb",
         "tonalRamp": [
-          "#272316",
-          "#4d462c",
-          "#746942",
-          "#9a8c58",
-          "#b4a77b",
-          "#cac1a2",
-          "#e0dbc8",
-          "#f6f4ef"
+          "#0b0b0c",
+          "#252525",
+          "#424243",
+          "#616162",
+          "#818284",
+          "#a4a5a8",
+          "#c7c9cd",
+          "#eceef3"
         ]
       },
       "on-dark-soft": {
         "role": "neutral",
-        "displayName": "Soft Light Ink, Secondary",
-        "canonical": "#c9d6cd",
+        "displayName": "Dusk Blue Text",
+        "canonical": "#c8d4e4",
         "tonalRamp": [
-          "#1a231d",
-          "#35453a",
-          "#4f6856",
-          "#698a73",
-          "#89a692",
-          "#acc0b2",
-          "#cedad2",
-          "#f1f4f2"
+          "#0a0b0d",
+          "#242527",
+          "#3f4246",
+          "#5d6268",
+          "#7c838c",
+          "#9da6b2",
+          "#bfcad9",
+          "#e5f0fe"
         ]
       },
-      "on-light-soft": {
+      "focus": {
         "role": "neutral",
-        "displayName": "Muted Ink",
-        "canonical": "#46524b",
+        "displayName": "Focus Slate",
+        "canonical": "#223d5e",
         "tonalRamp": [
-          "#1c211e",
-          "#38423c",
-          "#54625a",
-          "#708378",
-          "#8fa096",
-          "#b0bcb5",
-          "#d1d7d3",
-          "#f1f3f2"
+          "#000b1e",
+          "#0f2641",
+          "#294364",
+          "#4c6380",
+          "#71849c",
+          "#98a7ba",
+          "#c0cad8",
+          "#e9eff6"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Signal Red",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "#220000",
+          "#500000",
+          "#7e0a08",
+          "#af241d",
+          "#cd584b",
+          "#e88678",
+          "#ffb2a6",
+          "#ffe5e0"
+        ]
+      },
+      "overlay-slate": {
+        "role": "neutral",
+        "displayName": "Overlay Slate",
+        "canonical": "#182b44",
+        "tonalRamp": [
+          "#010b1d",
+          "#13263d",
+          "#32435a",
+          "#536277",
+          "#778394",
+          "#9da6b2",
+          "#c4cad1",
+          "#ebeff4"
+        ]
+      },
+      "photo-shade": {
+        "role": "neutral",
+        "displayName": "Photo Shade",
+        "canonical": "#0e1a2c",
+        "tonalRamp": [
+          "#030b1a",
+          "#1a2537",
+          "#384353",
+          "#59626f",
+          "#7c838d",
+          "#a1a5ac",
+          "#c7c9cd",
+          "#eceff2"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline only (close headline uses clamp(2.2rem,10vw,4.6rem))."
+        "purpose": "Hero H1 only, white, max 11ch, letter bounce-in."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section titles, uppercase 900."
+        "purpose": "Section headings."
+      },
+      "phone-display": {
+        "displayName": "Phone Display",
+        "purpose": "Closing-band tap-to-call number."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Service rows; step titles at 1.25rem."
+        "purpose": "Service rows; Facebook row clamp(20px,5.4vw,23px); step titles 21px (22px at 1024px); photo caption 22px/1.15."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "ODB wordmark; 25px from 760px."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Pill buttons; link button 16px; header number 17px (20px from 760px, 15px under 340px)."
+      },
+      "field-label": {
+        "displayName": "Field Label",
+        "purpose": "Form labels and legends."
+      },
+      "promise": {
+        "displayName": "Promise",
+        "purpose": "Hero promise line, max 30ch on phones."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Under section headings, max 38ch; close line clamp(18px,5vw,20px)."
+      },
+      "wordmark-wide": {
+        "displayName": "Wordmark Wide",
+        "purpose": "ODB wordmark from 760px."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Paragraphs; 18px at 900px+."
+        "purpose": "Running text, inputs and chips (16px so iOS does not zoom)."
       },
-      "label": {
-        "displayName": "Label",
-        "purpose": "Buttons, legends, labels, phone number."
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Error sentences, note under submit, composed message."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "(optional) notes beside labels; eyebrow pill text (carried exception)."
+      },
+      "wordmark-sub": {
+        "displayName": "Wordmark Sub",
+        "purpose": "Uppercase subline under the wordmark."
       }
     },
     "shadows": [
       {
-        "name": "photo-lift",
-        "value": "0 22px 44px -18px rgba(30,40,34,.55), 0 4px 12px rgba(30,40,34,.18)",
-        "purpose": "Work photograph only."
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(10,20,36,.3)",
+        "purpose": "Floating text circle only."
       },
       {
-        "name": "input-focus-halo",
-        "value": "0 0 0 3px rgba(148,96,8,.25)",
-        "purpose": "Text field focus with focus-light border."
-      },
-      {
-        "name": "headline-legibility",
-        "value": "text-shadow: 0 2px 24px rgba(15,34,25,.75)",
-        "purpose": "Headlines over leaf fields."
+        "name": "float-focus-ring",
+        "value": "0 0 0 8px #14243b, 0 10px 28px rgba(10,20,36,.3)",
+        "purpose": "Floating circle focus, with a 3px white outline offset 2px."
       }
     ],
+    "gradients": [
+      {
+        "name": "line-texture",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Deep band and footer only."
+      },
+      {
+        "name": "hero-overlay-phone",
+        "value": "linear-gradient(180deg,rgba(20,36,59,.8) 0%,rgba(24,43,68,.7) 55%,rgba(20,36,59,.82) 100%)",
+        "purpose": "Hero photo overlay below 760px."
+      },
+      {
+        "name": "hero-overlay-wide",
+        "value": "linear-gradient(90deg,rgba(20,36,59,.9) 0%,rgba(20,36,59,.8) 45%,rgba(24,43,68,.42) 100%)",
+        "purpose": "Hero photo overlay from 760px."
+      },
+      {
+        "name": "card-foot",
+        "value": "linear-gradient(180deg,transparent,rgba(14,26,44,.78))",
+        "purpose": "Bottom 40% of the work photo card, under the white caption."
+      }
+    ],
+    "translucents": [
+      {
+        "name": "row-hairline",
+        "value": "rgba(255,255,255,.12)",
+        "purpose": "Lines between service rows."
+      },
+      {
+        "name": "arrow-rest",
+        "value": "rgba(255,255,255,.1)",
+        "purpose": "Arrow circle at rest; ghost button hover wash."
+      },
+      {
+        "name": "ghost-stroke",
+        "value": "rgba(244,246,251,.7)",
+        "purpose": "Ghost button stroke at rest."
+      },
+      {
+        "name": "eyebrow-fill-light",
+        "value": "rgba(20,36,59,.06)",
+        "purpose": "Eyebrow pill on paper (carried exception)."
+      },
+      {
+        "name": "eyebrow-fill-dark",
+        "value": "rgba(255,255,255,.12)",
+        "purpose": "Eyebrow pill on hero and dark bands (carried exception)."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-default",
+        "value": "outline:3px solid #223d5e; outline-offset:3px; border-radius:6px",
+        "purpose": "All focusable elements on light grounds."
+      },
+      {
+        "name": "focus-dark",
+        "value": "outline-color:#dc955a",
+        "purpose": "Hero, navy, deep bands and footer."
+      },
+      {
+        "name": "focus-form-button",
+        "value": "outline:2px solid #223d5e; outline-offset:2px",
+        "purpose": "Submit and link button focus and hover."
+      }
+    ],
+    "icons": {
+      "style": "Inline SVG, currentColor. Line icons (arrow 2.6 stroke, phone and chat 2.2 stroke, round caps and joins) and filled Facebook and Messenger marks.",
+      "sizes": {
+        "button": "20px",
+        "arrow": "18px",
+        "header-phone": "18px",
+        "facebook-row": "30px",
+        "float": "26px",
+        "big-phone": "0.8em"
+      }
+    },
     "motion": [
       {
         "name": "state",
-        "value": "background-color/border-color/color .2s",
-        "purpose": "Buttons, arrow circle, proof bar."
-      },
-      {
-        "name": "control",
-        "value": "border-color/background-color .15s",
-        "purpose": "Chips and inputs."
+        "value": "background-color, color, border-color .2s",
+        "purpose": "Buttons and arrow circles."
       },
       {
         "name": "press",
-        "value": "translateY(1px) .15s",
-        "purpose": "Button active; disabled under reduced motion."
+        "value": "transform scale(.98) .12s",
+        "purpose": "Button active."
       },
       {
-        "name": "leaf-tune",
-        "value": "wind 34px/s, gust 70, gravity 46, blowForce 950, carry 1.1, blowRadius 90/130px, respawn 4-10s",
-        "purpose": "Leaf Field TUNE defaults."
+        "name": "control",
+        "value": "border-color, background-color, color .15s",
+        "purpose": "Inputs and chips."
+      },
+      {
+        "name": "float-slide",
+        "value": "transform translateY(120px) to none, .35s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Floating circle in and out."
+      },
+      {
+        "name": "letter-in",
+        "value": "opacity 0, translateX(50px) to rest, 1s cubic-bezier(.34,1.56,.64,1), delay calc(var(--i) * 20ms)",
+        "purpose": "Hero H1 bounce-in only; waits up to 900ms for Cal Sans."
+      },
+      {
+        "name": "rise",
+        "value": "opacity 0, translateY(12px) to rest, .4s ease-out, IntersectionObserver rootMargin 0 0 -8% 0",
+        "purpose": "Fade-up for elements starting below the first screen."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "no smooth scroll, no rise, no float or button transitions, no letter split",
+        "purpose": "prefers-reduced-motion: reduce."
       }
     ],
     "breakpoints": [
       {
-        "name": "no-wrap",
-        "value": "400px"
+        "name": "xs",
+        "value": "340px"
       },
       {
-        "name": "brand-sub",
-        "value": "430px"
-      },
-      {
-        "name": "sm",
-        "value": "640px"
-      },
-      {
-        "name": "phone-engine",
-        "value": "700px"
+        "name": "chips-narrow",
+        "value": "380px"
       },
       {
         "name": "md",
-        "value": "900px"
+        "value": "760px"
       },
       {
         "name": "lg",
         "value": "1024px"
+      },
+      {
+        "name": "hover",
+        "value": "(hover:hover)"
       }
     ],
-    "leafPalette": [
-      "#b8382a",
-      "#c8442b",
-      "#a8552a",
-      "#c4622a",
-      "#8a4a26",
-      "#d98a2e",
-      "#9e3324"
-    ],
-    "boardStains": [
-      "#c27a3f",
-      "#bb7239",
-      "#c88145",
-      "#b56c36",
-      "#c47c42",
-      "#be7640"
+    "layout": {
+      "maxWidth": "1160px",
+      "gutter": "20px / 40px from 760px",
+      "sectionPadding": "64px / 96px from 760px",
+      "heroPadding": "56px 0 64px / 112px 0 120px from 760px",
+      "header": "64px / 76px from 760px",
+      "formMaxWidth": "600px",
+      "fbRowMaxWidth": "520px"
+    },
+    "carriedExceptions": [
+      {
+        "name": "eyebrow-pill",
+        "values": "inline-flex, gap 10px, 500 14px/1 system, letter-spacing .02em, padding 9px 14px, radius 999px, 7px cedar dot; fill rgba(20,36,59,.06) on paper, rgba(255,255,255,.12) with on-dark text on dark",
+        "reason": "Owner house-style call (calm-photo-style.md item 5); documented so shipped values match, not a pattern to repeat."
+      }
     ]
   },
   "components": [
     {
-      "name": "Fill Button",
+      "name": "Primary Button",
       "kind": "button",
-      "refersTo": "button-fill",
-      "description": "Primary action: free estimate, form submit.",
-      "html": "<a class=\"ds-btn ds-btn-fill\" href=\"#\">Get a free estimate</a>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:var(--radius,10px);font:800 17px/1 var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif);text-decoration:none;border:2px solid var(--cedar,#c27a3f);cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid var(--maple,#efb43c);outline-offset:3px}.ds-btn-fill{background:var(--cedar,#c27a3f);color:var(--on-cedar,#1d1109)}.ds-btn-fill:hover{background:var(--cedar-hover,#d38a4d);border-color:var(--cedar-hover,#d38a4d)}"
+      "refersTo": "button-primary",
+      "description": "Cedar pill with ink text: the free-estimate action and the form submit.",
+      "html": "<div style=\"background:#f4f6fb;padding:20px\"><a class=\"ds-btn ds-btn-primary\" href=\"#\">Get a free estimate</a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);letter-spacing:.015em;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn svg{width:20px;height:20px;flex:none}.ds-btn-primary{background:var(--cedar);color:var(--ink);border-color:var(--cedar)}.ds-btn-primary:hover{background:var(--cedar-2);border-color:var(--cedar-2)}.ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:var(--pill)}"
     },
     {
-      "name": "Line Button",
+      "name": "Ghost Button",
       "kind": "button",
-      "refersTo": "button-line",
-      "description": "Secondary action on dark grounds: Message us on Facebook.",
-      "html": "<div style=\"background:#1b3a2f;padding:20px\"><a class=\"ds-btn-line\" href=\"#\">Message us on Facebook</a></div>",
-      "css": ".ds-btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:10px;font:800 17px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;text-decoration:none;border:2px solid #c27a3f;background:rgba(27,58,47,.55);color:#f3f1ea;transition:border-color .2s,color .2s}.ds-btn-line:hover{border-color:#efb43c;color:#efb43c}.ds-btn-line:focus-visible{outline:3px solid #efb43c;outline-offset:3px}"
+      "refersTo": "button-ghost",
+      "description": "Outlined pill on the hero, carrying the Messenger mark in currentColor.",
+      "html": "<div style=\"background:#223d5e;padding:20px\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\"><path fill=\"currentColor\" d=\"M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.15.26.35.27.57l.05 1.78a.8.8 0 0 0 1.12.71l1.98-.87c.17-.08.36-.09.53-.04.91.25 1.88.38 2.91.38 5.64 0 10-4.13 10-9.7S17.64 2 12 2Zm6 7.46-2.93 4.66a1.5 1.5 0 0 1-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66a1.5 1.5 0 0 1 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.18.68.63Z\"/></svg>Message us on Facebook</a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);letter-spacing:.015em;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn svg{width:20px;height:20px;flex:none}.ds-btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,246,251,.7)}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:focus-visible{outline:3px solid var(--cedar);outline-offset:3px}"
     },
     {
-      "name": "Service Row",
-      "kind": "custom",
-      "refersTo": "service-row-arrow",
-      "description": "Ruled uppercase link; only the arrow circle responds to hover/focus.",
-      "html": "<div style=\"background:#e8ece7;color:#262b2e;padding:16px\"><a class=\"ds-row\" href=\"#\">Decks<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h13M13 6l6 6-6 6\"/></svg></span></a></div>",
-      "css": ".ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:8px 2px;color:inherit;text-decoration:none;font:900 1.6rem/0.98 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;text-transform:uppercase;border-top:1px solid #c5cec7;border-bottom:1px solid #c5cec7}.ds-row:hover,.ds-row:focus-visible{outline:none}.ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#dde3dd;color:#262b2e;transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#c27a3f;color:#1d1109}.ds-row:focus-visible .ds-arrow{outline:3px solid #946008;outline-offset:3px}"
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Field Mist fill, 10px radius, navy stroke on hover and focus, red stroke plus a 15px sentence on error.",
+      "html": "<div style=\"background:#fff;padding:20px;display:grid;gap:8px\"><label class=\"ds-label\" for=\"ds-w\">Where is the job?</label><input class=\"ds-input\" id=\"ds-w\" type=\"text\" placeholder=\"e.g. South Windsor\"><p class=\"ds-err\">Add the town or street so we know where to come.</p></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-label{font:400 17px/1.2 var(--display);letter-spacing:.015em;color:var(--ink)}.ds-input{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s;box-sizing:border-box}.ds-input::placeholder{color:var(--soft)}.ds-input:hover,.ds-input:focus{outline:none;border-color:var(--focus)}.ds-err{margin:0;font:15px/1.5 var(--text);color:var(--error)}"
     },
     {
-      "name": "Chip",
+      "name": "Job Chips",
       "kind": "chip",
       "refersTo": "chip",
-      "description": "Pill checkbox/radio for project type and timing.",
-      "html": "<div style=\"background:#e8ece7;padding:16px;display:flex;gap:10px\"><label class=\"ds-chip\"><input type=\"checkbox\"><span>Deck</span></label><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Pergola</span></label></div>",
-      "css": ".ds-chip{position:relative}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px}.ds-chip span{display:flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#fff;border:2px solid #84928a;color:#262b2e;font:700 17px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chip span:hover{border-color:#946008}.ds-chip input:focus-visible+span{outline:3px solid #946008;outline-offset:2px}.ds-chip input:checked+span{background:#1b3a2f;border-color:#1b3a2f;color:#f3f1ea}"
-    },
-    {
-      "name": "Text Input",
-      "kind": "input",
-      "refersTo": "input",
-      "description": "White field with control-line border and Deep Maple focus.",
-      "html": "<div style=\"background:#e8ece7;padding:16px\"><input class=\"ds-input\" placeholder=\"Your name\"></div>",
-      "css": ".ds-input{width:100%;font:16px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#262b2e;background:#fff;border:2px solid #84928a;border-radius:10px;padding:14px;min-height:54px;transition:border-color .15s}.ds-input:hover{border-color:#946008}.ds-input:focus{outline:none;border-color:#946008;box-shadow:0 0 0 3px rgba(148,96,8,.25)}"
-    },
-    {
-      "name": "Proof Bar",
-      "kind": "card",
-      "refersTo": "proof-bar",
-      "description": "Facebook link bar under the work photo.",
-      "html": "<a class=\"ds-fb\" href=\"#\"><span>Click to see more of our work.<small>2,600+ people follow our builds</small></span><svg class=\"ds-go\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h13M13 6l6 6-6 6\"/></svg></a>",
-      "css": ".ds-fb{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 18px;border-radius:10px;background:#1b3a2f;color:#f3f1ea;text-decoration:none;font:800 17px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;transition:background-color .2s}.ds-fb:hover{background:#234a3c}.ds-fb:focus-visible{outline:3px solid #946008;outline-offset:3px}.ds-fb small{display:block;font-weight:500;color:#c9d6cd;font-size:15px;margin-top:2px}.ds-go{margin-left:auto;width:22px;height:22px;flex:none;transition:transform .2s}.ds-fb:hover .ds-go{transform:translateX(3px);color:#efb43c}"
+      "description": "Pill choices on Field Mist; checked fills ink with a drawn tick.",
+      "html": "<div style=\"background:#fff;padding:20px\"><div class=\"ds-chips\"><input type=\"checkbox\" id=\"dc1\" checked><label for=\"dc1\">Deck</label><input type=\"checkbox\" id=\"dc2\"><label for=\"dc2\">Pergola</label><input type=\"checkbox\" id=\"dc3\"><label for=\"dc3\">Railings &amp; stairs</label></div></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chips label:hover{border-color:var(--focus)}.ds-chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px}.ds-chips input:checked+label{background:var(--ink);color:#fff}.ds-chips input:checked+label::before{content:'';width:12px;height:7px;border:solid currentColor;border-width:0 0 2.5px 2.5px;transform:rotate(-45deg) translateY(-2px);margin-right:10px}"
     },
     {
       "name": "Header",
       "kind": "nav",
       "refersTo": "header",
-      "description": "Plank mark and name left, phone number top-right; absolute, not sticky.",
-      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 64 64\" width=\"34\" height=\"34\"><rect width=\"64\" height=\"64\" rx=\"12\" fill=\"#c27a3f\"/><rect y=\"20\" width=\"64\" height=\"3\" fill=\"#7d4320\"/><rect y=\"41\" width=\"64\" height=\"3\" fill=\"#7d4320\"/></svg><b>Outdoor Design Build<span>Windsor, Ontario</span></b></a><a class=\"ds-tel\" href=\"#\">226-260-8133</a></div>",
-      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding:0 20px;background:#1b3a2f;color:#f3f1ea;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}.ds-brand{display:flex;align-items:center;gap:10px;color:inherit;text-decoration:none}.ds-brand b{font-weight:900;text-transform:uppercase;font-size:15px;line-height:1;letter-spacing:.02em}.ds-brand b span{display:block;color:#e3a46d;font-size:11px;letter-spacing:.14em;margin-top:4px}.ds-tel{color:inherit;font-weight:800;font-size:17px;text-decoration:none;font-variant-numeric:tabular-nums}.ds-tel:hover{color:#efb43c}.ds-tel:focus-visible,.ds-brand:focus-visible{outline:3px solid #efb43c;outline-offset:3px;border-radius:6px}"
+      "description": "Paper strip: ODB wordmark with uppercase subline left, Cal Sans tap-to-call right.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>ODB</b><span>Outdoor Design Build</span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>226-260-8133</a></header>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px;background:var(--paper);color:var(--ink)}.ds-brand{display:flex;flex-direction:column;text-decoration:none;color:inherit;line-height:1}.ds-brand b{font:400 22px/1 var(--display);letter-spacing:.02em}.ds-brand span{font:600 12px/1 var(--text);letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-top:5px}.ds-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font:400 17px/1 var(--display);text-decoration:none;color:inherit;white-space:nowrap}.ds-tel svg{color:var(--cedar-ink)}.ds-tel:hover{color:var(--cedar-ink)}.ds-tel:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Whole row is the link on navy; only the arrow circle fills cedar on hover or focus.",
+      "html": "<div style=\"background:#223d5e;padding:8px 20px\"><a class=\"ds-row\" href=\"#\">Decks<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a><a class=\"ds-row\" href=\"#\">Pergolas<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:10px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(21px,5.6vw,24px)/1.2 var(--display);border-top:1px solid rgba(255,255,255,.12)}.ds-row:last-child{border-bottom:1px solid rgba(255,255,255,.12)}.ds-row:hover,.ds-row:focus-visible{outline:none}.ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow{background:var(--cedar);color:var(--ink)}.ds-row:focus-visible .ds-arrow{background:var(--cedar);color:var(--ink);outline:3px solid var(--cedar);outline-offset:3px}"
+    },
+    {
+      "name": "Work Photo Card + Facebook Row",
+      "kind": "card",
+      "refersTo": "work-card",
+      "description": "Square photo at 24px radius with a bottom gradient and white caption; navy Facebook row with the mark in currentColor and an arrow-only hover.",
+      "html": "<div style=\"background:#f4f6fb;padding:20px;display:grid;gap:28px;max-width:420px\"><figure class=\"ds-shot\"><div class=\"ds-ph\"></div><b>Deck, stairs &amp; pergola</b></figure><a class=\"ds-fb\" href=\"#\"><span class=\"ds-lbl\"><svg viewBox=\"0 0 24 24\" width=\"30\" height=\"30\" fill=\"currentColor\"><path d=\"M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z\"/></svg>Click to see more of our work on Facebook.</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-shot{position:relative;margin:0;border-radius:var(--r-card);overflow:hidden;background:var(--deep);aspect-ratio:1/1}.ds-ph{position:absolute;inset:0;background:linear-gradient(160deg,#b9773f,#6e4321)}.ds-shot::after{content:'';position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(180deg,transparent,rgba(14,26,44,.78))}.ds-shot b{position:absolute;left:20px;right:20px;bottom:18px;z-index:1;font:400 22px/1.15 var(--display);color:#fff}.ds-fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:84px;padding:14px 16px 14px 22px;border-radius:var(--r-card);background:var(--navy);color:var(--on-dark);text-decoration:none;font:400 clamp(20px,5.4vw,23px)/1.2 var(--display)}.ds-fb:hover,.ds-fb:focus-visible{outline:none}.ds-lbl{display:flex;align-items:center;gap:14px}.ds-lbl svg{flex:none;color:var(--cedar)}.ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s}.ds-fb:hover .ds-arrow,.ds-fb:focus-visible .ds-arrow{background:var(--cedar);color:var(--ink)}"
+    },
+    {
+      "name": "Numbered Steps",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Cedar 48px numerals beside Cal Sans titles on the textured deep band.",
+      "html": "<div class=\"ds-deep\"><ol class=\"ds-steps\"><li><div><b>Send us the idea.</b><span>A few lines and a photo of the yard is plenty.</span></div></li><li><div><b>Get a free estimate.</b><span>We go over the size, the wood and the budget with you.</span></div></li></ol></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:32px 20px;font:16px/1.7 var(--text)}.ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:24px;counter-reset:s}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--cedar);color:var(--ink);font:400 20px/1 var(--display)}.ds-steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}.ds-steps span{display:block;margin-top:4px}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "float-text",
+      "description": "60px cedar circle opening a pre-written text; the only shadow in the system.",
+      "html": "<div style=\"background:#f4f6fb;padding:24px;display:flex;justify-content:flex-end\"><a class=\"ds-float\" href=\"#\" aria-label=\"Text Team ODB\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--field:#e6ecf5;--ink:#14243b;--body:#2a3748;--soft:#4a5668;--navy:#223d5e;--deep:#14243b;--on-dark:#f4f6fb;--on-dark-soft:#c8d4e4;--cedar:#dc955a;--cedar-2:#e8ab78;--cedar-ink:#8f4a17;--focus:#223d5e;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--cedar);color:var(--ink);box-shadow:0 10px 28px rgba(10,20,36,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-float:focus-visible{outline:3px solid #fff;outline-offset:2px;box-shadow:0 0 0 8px var(--ink),0 10px 28px rgba(10,20,36,.3)}"
     }
   ],
   "narrative": {
-    "northStar": "The Deck Before the Snow",
-    "overview": "**Creative North Star: \"The Deck Before the Snow\"**\n\nThe page is the client's own cedar deck at dusk in late October. Spruce green is the yard and the sky; fresh-stained cedar boards, drawn live on canvas with real grain, screws and butt joints, are the structural material that ties every section together; pale siding grey carries the reading sections. Maple and elm leaves blow in on a gusty breeze and settle on the boards, and a finger or mouse sweeps them off like a leaf blower. That living deck is the signature; everything else stays plain so it can carry the page.\n\nDensity is low and phone-first: one column, big uppercase heads, 56px buttons, generous section padding. Type is a single heavy system sans. There is no card grid, no stock photo hero, no testimonial strip. Proof is the client's one real deck photo and their Facebook following.",
+    "northStar": "The Finished Deck at Dusk",
+    "overview": "The page is a calm stack of full-bleed bands taken from one real job: off-white paper, the slate navy of the deck's dark posts, the deeper navy of its black rails, and fresh cedar from the boards as the only warm colour. Every section is a band, and light and dark alternate so a new section is obvious on a phone held in one hand inside Facebook's browser. The crew's own photo carries the first screen under a navy overlay; everything below it is quiet, soft-cornered and borderless.\n\nDensity is low and the rhythm is generous: 64px bands on phones, 96px on desktop, a 20px phone gutter. Shapes are soft (24px cards, 10px fields, full pills) and nothing has a border except form controls on hover and focus. Depth is tonal: bands, a white form card on paper, a navy overlay on a photo. There is one shadow on the page, under the floating text circle.\n\nMotion is limited to three moments: the hero headline bounces in letter by letter, content below the first screen rises 12px as it arrives, and the floating text circle slides up once the hero is gone. All three switch off under reduced motion, and the page is fully visible without JavaScript.",
     "keyCharacteristics": [
-      "Dark spruce ground alternating with light siding sections, joined by cedar plank seams.",
-      "Cedar is the action color; maple gold appears only as focus/hover feedback.",
-      "One family, weight 900, uppercase for every heading.",
-      "Live canvas leaves over cached board drawings in hero, seams, photo ledge and close.",
-      "Flat UI; the only real shadow sits under the photograph."
+      "Full-bleed bands: paper, navy, paper, deep navy with a faint 135deg line texture, paper, navy, deep footer.",
+      "One warm accent, used as a fill; cedar text on light grounds always uses the darker Stained Cedar.",
+      "Cal Sans at weight 400 for every heading, button, label and phone number; the system stack for running text at 16/1.7.",
+      "Soft borderless geometry: 24px cards, 10px tinted fields, 999px pills, circles for arrows, step numbers and the text button.",
+      "Hover changes one small thing: the arrow circle on a row, the fill on a button, an outline on a control."
     ],
     "rules": [
       {
-        "name": "The Maple Means Focus Rule",
-        "body": "Maple gold (and Deep Maple on light) signals \"you are here / you can press this\". It is never decoration, never a heading color, never a resting fill.",
+        "name": "The Cedar Is a Fill Rule",
+        "body": "Fresh Cedar never sits as text on paper or white; on light grounds cedar-coloured text is Stained Cedar, and text on a cedar fill is Post Navy Ink.",
         "section": "colors"
       },
       {
-        "name": "The Two Focus Colors Rule",
-        "body": "Default `:focus-visible` is a 3px maple outline at 3px offset; inside any `.light` section it switches to focus-light. Any new light surface must carry the `light` class so focus stays visible.",
+        "name": "The Last Phrase Rule",
+        "body": "On navy and deep bands (and the hero) the closing phrase of a heading may be set in Fresh Cedar (\"before winter.\", \"build.\", \"works.\", \"before the snow.\"). On paper the heading stays ink.",
         "section": "colors"
       },
       {
-        "name": "The Plain Numeral Rule",
-        "body": "Steps are numbered with a bare cedar-hi numeral (900, 52px) from a CSS counter. No circles, badges or \"Step 01\" labels.",
+        "name": "The Texture Belongs to Deep Rule",
+        "body": "The 135deg line texture (`repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)`) appears on the deep band and the footer only, and stays at 3.5% white so it never reads as lines through text.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Weight Rule",
+        "body": "Cal Sans is only ever set at 400. Hierarchy comes from size and colour, never from weight.",
         "section": "typography"
       },
       {
-        "name": "The Only the Photo Floats Rule",
-        "body": "No card or button shadows. If something needs separation, use a ground change or a 1px rule.",
+        "name": "The Bounce Is for the H1 Rule",
+        "body": "Only the hero headline animates letter by letter; no other heading gets a letter effect.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Shadow Rule",
+        "body": "Only the floating text circle casts a shadow. Cards, buttons, rows and the header stay flat; hover never adds a shadow.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do join every dark/light section boundary with a cedar plank seam field.",
-      "Do keep cedar as the only action fill and maple (focus-light on siding) as the only hover/focus accent.",
-      "Do set every heading 900 uppercase in the system stack, balanced wrap.",
-      "Do keep tap targets at least 44px (buttons 56px, chips 48px, inputs 54px).",
-      "Do add any new text block over a leaf field to that field's avoid list and give it the legibility text-shadow.",
-      "Do keep the phone number top-right on the first screen and show it at most once per screen.",
-      "Do make everything that looks pressable actually pressable (rows, chips, arrow circles, proof bar all link or toggle)."
+      "Do alternate full-bleed bands so each section change is visible, with the line texture only on the deep band and footer.",
+      "Do use Fresh Cedar as a fill with ink text on it, and Stained Cedar whenever cedar has to be text or an icon on paper or white.",
+      "Do set every heading, button, label and phone number in Cal Sans at 400, and running text in the system stack at 16px/1.7.",
+      "Do keep fields and chips on Field Mist inside the white card, with a navy 2px stroke on hover and focus and Signal Red on error.",
+      "Do keep tap targets at 44px or more (rows 68px, buttons 56px, chips 48px).",
+      "Do gate hover styles behind a hover-capable pointer query, and switch off the bounce-in, fade-up, float slide and smooth scroll under reduced motion.",
+      "Do draw icons in currentColor so they take the band's colour.",
+      "Do let the photo carry the hero under a navy overlay dark enough for 4.5:1 white text."
     ],
     "donts": [
-      "Don't make the header sticky or add a sticky/floating call bar (client house rule).",
-      "Don't repeat the phone number elsewhere on the first screen, or place it anywhere but top-right there.",
-      "Don't add email links (none exists; if the owner supplies one, it goes in the footer only).",
-      "Don't style non-interactive things to look clickable: no arrow circles, pills, underlines or button shapes on static content.",
-      "Don't change the service row background or draw a box on hover; only the arrow circle responds.",
-      "Don't add shadows to cards or buttons, or wrap rows and steps in cards.",
-      "Don't add eyebrows, kickers or badges above headings, or step-number chips.",
-      "Don't redraw the boards every frame or run the loop off-screen."
+      "Don't put Fresh Cedar text on paper or white, or white text on a cedar fill.",
+      "Don't add shadows to cards, rows, buttons or the header; the floating circle owns the only shadow.",
+      "Don't change a whole service row or the Facebook row on hover; only the arrow circle fills.",
+      "Don't animate any heading other than the hero H1, and never leave content at opacity 0 when JavaScript is off or motion is reduced.",
+      "Don't raise the line texture above 3.5% white or put it on paper or navy bands.",
+      "Don't add borders to cards or fields at rest.",
+      "Don't add new eyebrow pills; the two in the build are a carried owner exception, not a heading treatment to repeat.",
+      "Don't stretch or distort photos; crop with object-fit cover."
     ]
   }
 }
